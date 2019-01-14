@@ -1,18 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <title>Xquotic Mas</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./stylesheet/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="./stylesheet/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./stylesheet/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="./stylesheet/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="./stylesheet/css/bootstrap.css" rel="stylesheet">
+    <link href="./stylesheet/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Xquotic Mas</title>
-    <img src="./assets/Mas.png">
   </head>
+
   <body>
-    <h1>Hello, world! and every body else!!</h1>
+    
+
+    <!-- Logo Image -->
+
+    <img src="./assets/Mas.png">
+
+    <h1>Are you of legal age to party with Xquotic ? </h1>
+
+    <form action="/action_page.php">
+      Birthday:
+      <input type="date" name="bday">
+      <button type="submit" class="btn btn-outline-info">Enter</button>
+    </form>
+
+    
+
+    <h1>Be Exquisite; Live Exotic…</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
