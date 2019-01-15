@@ -35,6 +35,19 @@
     <link href="./stylesheet/css/bootstrap.css" rel="stylesheet">
     <link href="./stylesheet/css/bootstrap.min.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script type="text/javascript">
+        $(document).ready(function () {
+            var nowY = new Date().getFullYear(),options = "";
+
+			for(var Y=nowY; Y>=1968; Y--) {
+			  options += "<option>"+ Y +"</option>";
+			}
+
+			$("#year").append( options );
+		});
+    </script>
+    
   </head>
 
   <body>
@@ -56,23 +69,26 @@
 		<br>
 		<br>
 		<br>
-
-	    <form action="/action_page.php" style="width: 1000px; position: absolute; margin: auto; padding-left: 13.5em; right: 0; left: 0;">
+	    <form action="./src/pages/index.php" method="POST" enctype="multipart/form-data" style="width: 1000px; position: absolute; margin: auto; padding-left: 13.5em; right: 0; left: 0;">
 <!-- 	      <label for="date">Your Birth Date:</label> -->
 	      	<font size="5">Your Birth Date:</font>
-	        <select id="day" name="day" required>
+	        <select id="year" name="year" required>
 	          <option value="year">year</option>
-	          <option value="Headley Facey">Headley Facey</option>
-	          <option value="Raymour Wilson">Raymour Wilson</option>
-	          <option value="Courtney Barrett">Courtney Barrett</option>
-	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
 	        </select>
 	        <select id="day" name="day" required>
 	          <option value="month">month</option>
-	          <option value="Headley Facey">Headley Facey</option>
-	          <option value="Raymour Wilson">Raymour Wilson</option>
-	          <option value="Courtney Barrett">Courtney Barrett</option>
-	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
+	          <option value='1'>Janaury</option>
+			  <option value='2'>February</option>
+			  <option value='3'>March</option>
+			  <option value='4'>April</option>
+			  <option value='5'>May</option>
+			  <option value='6'>June</option>
+			  <option value='7'>July</option>
+			  <option value='8'>August</option>
+			  <option value='9'>September</option>
+			  <option value='10'>October</option>
+			  <option value='11'>November</option>
+			  <option value='12'>December</option>
 	        </select> 
 	        <select id="day" name="day" required>
 	          <option value="day">day</option>
