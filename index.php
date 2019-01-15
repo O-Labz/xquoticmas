@@ -40,21 +40,53 @@
   <body>
     
 
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
     <!-- Logo Image -->
+    <div class="container">
+  		<img src="./assets/Mas.png" id="exotic" alt="exotic" style="width: 650px; position: absolute;   margin: auto; right: 0; left: 0;">
+	</div>
 
-    <img src="./assets/Mas.png">
+	<div class="container">
+  		<h1 style="width: 650px; position: relative; margin: auto; margin-top: 340px; padding-left: 1em; right: 0; left: 0;">Are you of legal age to party with Xquotic ? </h1>
 
-<!--     <h1>Are you of legal age to party with Xquotic ? </h1>
+		<br>
+		<br>
+		<br>
 
-    <form action="/action_page.php">
-      Birthday:
-      <input type="date" name="bday">
-      <button type="submit" class="btn btn-outline-info">Enter</button>
-    </form>
+	    <form action="/action_page.php" style="width: 1000px; position: absolute; margin: auto; padding-left: 13.5em; right: 0; left: 0;">
+<!-- 	      <label for="date">Your Birth Date:</label> -->
+	      	<font size="5">Your Birth Date:</font>
+	        <select id="day" name="day" required>
+	          <option value="year">year</option>
+	          <option value="Headley Facey">Headley Facey</option>
+	          <option value="Raymour Wilson">Raymour Wilson</option>
+	          <option value="Courtney Barrett">Courtney Barrett</option>
+	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
+	        </select>
+	        <select id="day" name="day" required>
+	          <option value="month">month</option>
+	          <option value="Headley Facey">Headley Facey</option>
+	          <option value="Raymour Wilson">Raymour Wilson</option>
+	          <option value="Courtney Barrett">Courtney Barrett</option>
+	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
+	        </select> 
+	        <select id="day" name="day" required>
+	          <option value="day">day</option>
+	          <option value="Headley Facey">Headley Facey</option>
+	          <option value="Raymour Wilson">Raymour Wilson</option>
+	          <option value="Courtney Barrett">Courtney Barrett</option>
+	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
+	        </select>
+	        <br>
+	        <br>  
+	      <button type="submit" class="btn btn-outline-info" style="width: 250px; right: 0; left: 0; margin-left: 200px;">Enter</button>
+	    </form>
+	</div>
 
-    
-
-    <h1>Be Exquisite; Live Exotic…</h1> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -62,4 +94,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+ <!--  <footer style="width: 650px; position: absolute;   margin: auto; bottom: 4; right: 0; left: 0;"> <strong>Digicel Group</strong> ©2016 Roamtech  - <strong> Version 1.0.0</strong></footer> -->
 </html>
