@@ -46,29 +46,29 @@
 	<br>
 	<!-- Logo Image -->
 
-	<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; background-color: #ffffff;">
+	<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; background-color: #ffffff; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarText">
 	    <ul class="navbar-nav mr-auto">
 		  <li class="nav-item">
-		    <a class="nav-link active" href="#">Home</a>
+		    <a class="nav-link active" href="#" style="color: #620365;">Home</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">About Us</a>
+		    <a class="nav-link" href="#" style="color: #620365;">About Us</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Gallery</a>
+		    <a class="nav-link" href="#" style="color: #620365;">Gallery</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Packages</a>
+		    <a class="nav-link" href="#" style="color: #620365;">Packages</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Registration</a>
+		    <a class="nav-link" href="#" style="color: #620365;">Registration</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Contact Us</a>
+		    <a class="nav-link" href="#" style="color: #620365;">Contact Us</a>
 		  </li>
 	    </ul>
 	  </div>
