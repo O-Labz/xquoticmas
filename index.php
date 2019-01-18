@@ -47,7 +47,7 @@
 			$("#year").append( options );
 		});
     </script>
-    
+
   </head>
 
   <body>
@@ -58,18 +58,18 @@
 	<br>
 	<br>
 	<br>
-    <!-- Logo Image -->
+	<!-- Logo Image -->
+	<div class="container">
+  		<img src="./assets/LandingBackGroung.png" id="exotic" alt="exotic" style="width: 100%; position: fixed;   margin: auto; top: 0; right: 0; left: 0;">
+	</div>
+
     <div class="container">
-  		<img src="./assets/Mas.png" id="exotic" alt="exotic" style="width: 650px; position: absolute;   margin: auto; right: 0; left: 0;">
+  		<img src="./assets/MasLogo.png" id="exotic" alt="exotic" style="width: 500px; position: fixed; margin: auto; margin-top: 28.5%; right: 0; left: 0;">
 	</div>
 
 	<div class="container">
-  		<h1 style="width: 650px; position: relative; margin: auto; margin-top: 340px; padding-left: 1em; right: 0; left: 0;">Are you of legal age to party with Xquotic ? </h1>
-
-		<br>
-		<br>
-		<br>
-	    <form action="./src/pages/index.php" method="POST" enctype="multipart/form-data" style="width: 1000px; position: absolute; margin: auto; padding-left: 13.5em; right: 0; left: 0;">
+  		<h1 style="width: 100%; position: relative; margin: auto; margin-top: 65%; padding-left: 6em; right: 0; left: 0;">Are you of legal age to party with Xquotic ? </h1>
+	    <form action="./src/pages/index.php" method="POST" enctype="multipart/form-data" style="width: 100%; position: absolute; margin: auto; padding-left: 33em; right: 0; left: 0;">
 <!-- 	      <label for="date">Your Birth Date:</label> -->
 	      	<font size="5">Your Birth Date:</font>
 	        <select id="year" name="year" required>
@@ -97,9 +97,7 @@
 	          <option value="Courtney Barrett">Courtney Barrett</option>
 	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
 	        </select>
-	        <br>
-	        <br>  
-	      <button type="submit" class="btn btn-outline-info" style="width: 250px; right: 0; left: 0; margin-left: 200px;">Enter</button>
+	      <button type="submit" class="btn btn-outline-info" style="width: 250px; margin-left: 18px;">Enter</button>
 	    </form>
 	</div>
 
