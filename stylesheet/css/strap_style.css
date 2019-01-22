@@ -36,6 +36,7 @@
 }
 
 
+
 footer {
   position: fixed;
   right: 0;
@@ -48,3 +49,20 @@ footer {
   font-size: 1.9em;
   font-family: Baskerville;
 }
+
+/*.my-gallery{
+  margin: 10px 50px;
+}
+
+.my-gallery img{
+  width: 300px;
+  height: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.my-gallery img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}*/
