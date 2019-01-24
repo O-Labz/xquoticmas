@@ -69,7 +69,7 @@
 
 	<div class="container">
   		<h1 style="width: 100%; position: relative; margin: auto; margin-top: 65%; padding-left: 6em; right: 0; left: 0;">Are you of legal age to party with Xquotic ? </h1>
-	    <form action="./src/pages/index.php" method="POST" enctype="multipart/form-data" style="width: 100%; position: absolute; margin: auto; padding-left: 33em; right: 0; left: 0;">
+	    <form action="./src/pages/index.php?page=home" method="POST" enctype="multipart/form-data" style="width: 100%; position: absolute; margin: auto; padding-left: 33em; right: 0; left: 0;">
 <!-- 	      <label for="date">Your Birth Date:</label> -->
 	      	<font size="5">Your Birth Date:</font>
 	        <select id="year" name="year" required>
@@ -108,5 +108,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
- <!--  <footer style="width: 650px; position: absolute;   margin: auto; bottom: 4; right: 0; left: 0;"> <strong>Digicel Group</strong> ©2016 Roamtech  - <strong> Version 1.0.0</strong></footer> -->
 </html>
