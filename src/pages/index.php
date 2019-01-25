@@ -28,7 +28,15 @@
 			# code...
 	  		include 'registration.php';
 		break;
+		case 'registrationdone':
+			# code...
+	  		include 'registration.php';
+		break;
 	  	case 'contact':
+			# code...
+	  		include 'contact.php';
+		break;
+		case 'contactdone':
 			# code...
 	  		include 'contact.php';
 		break;

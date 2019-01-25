@@ -1,3 +1,5 @@
+
+
 <?php
 
 	// Get a connection for the database
@@ -41,8 +43,9 @@
     
     mysqli_close($abc);
 
-    include 'done.php';
+    header($register_link);
 
     exit();
 
 ?>
+

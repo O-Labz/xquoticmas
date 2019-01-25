@@ -39,6 +39,8 @@
 
     <script type="text/javascript" src="/xauticmas/stylesheet/js/lightbox-plus-jquery.min.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: fixed;">
 

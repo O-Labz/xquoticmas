@@ -1,3 +1,15 @@
+
+<?php
+
+  $trigger = $_GET['page'];
+  if ($trigger  == 'contactdone') {
+    # code...
+    echo '<script type="text/javascript">';
+    echo 'swal("Thank You!", "We will get back to you shortly!", "success")';
+    echo '</script>';
+  }
+?>
+
 <div class="container my-container">
   <form action="sendcomment.php" method="POST" enctype="multipart/form-data">
     <div class="form-row">

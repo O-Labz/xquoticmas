@@ -1,3 +1,15 @@
+<?php
+
+  $trigger = $_GET['page'];
+  if ($trigger  == 'registrationdone') {
+    # code...
+    echo '<script type="text/javascript">';
+    echo 'swal("Good job!", "Registration Complete!", "success")';
+    echo '</script>';
+  }
+?>
+
+
 <div class="container my-container">
   <form action="registeruser.php" method="POST" enctype="multipart/form-data">
     <div class="form-row">
