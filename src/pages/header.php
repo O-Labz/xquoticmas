@@ -54,7 +54,7 @@
 	<!-- Logo Nav Bar -->
 
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; background-color: #ffffff; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
+		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
