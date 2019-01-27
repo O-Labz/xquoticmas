@@ -35,7 +35,7 @@
     <link href="/xauticmas/stylesheet/css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="/xauticmas/stylesheet/css/bootstrap.min.css" rel="stylesheet">
     <link href="/xauticmas/stylesheet/css/lightbox.min.css" rel="stylesheet">
-    <link href="/xauticmas/stylesheet/css/strap_style.css" rel="stylesheet">
+    <link href="/xauticmas/stylesheet/css/homestyle.css" rel="stylesheet">
 
     <script type="text/javascript" src="/xauticmas/stylesheet/js/lightbox-plus-jquery.min.js"></script>
 
@@ -57,29 +57,29 @@
 
 	<header>
 		<img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: fixed;">
-		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
+		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 6%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarText">
 		    <ul class="navbar-nav mr-auto">
 			  <li class="nav-item">
-			    <a class="nav-link active" href="index.php?page=home" style="color: #ffffff;">Home</a>
+			    <a class="nav-link active" href="index.php?page=home" >Home</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=about" style="color: #ffffff;">About Us</a>
+			    <a class="nav-link" href="index.php?page=about">About Us</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=gallery" style="color: #ffffff;">Gallery</a>
+			    <a class="nav-link" href="index.php?page=gallery">Gallery</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=package" style="color: #ffffff;">Packages</a>
+			    <a class="nav-link" href="index.php?page=package">Packages</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=registration" style="color: #ffffff;">Registration</a>
+			    <a class="nav-link" href="index.php?page=registration" >Registration</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=contact" style="color: #ffffff;">Contact Us</a>
+			    <a class="nav-link" href="index.php?page=contact">Contact Us</a>
 			  </li>
 		    </ul>
 		  </div>

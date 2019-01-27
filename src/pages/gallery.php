@@ -1,6 +1,7 @@
 <style type="text/css">
 	.my-gallery{
 	  margin: 10px 50px;
+	  padding-top: 200px;
 	}
 
 	.my-gallery img{
@@ -18,7 +19,7 @@
 </style>
 
 
-<div class="my-gallery" style="margin: 10px 50px!important; padding-top: 200px">
+<div class="my-gallery">
 	<a href="/xauticmas/assets/gallery/pic1.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic1.jpg"></a>
 	<a href="/xauticmas/assets/gallery/pic2.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic2.jpg"></a>
 	<a href="/xauticmas/assets/gallery/pic3.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic3.jpg"></a>

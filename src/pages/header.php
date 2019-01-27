@@ -44,6 +44,13 @@
 
     <img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: fixed;">
 
+    <style type="text/css">
+
+		nav .navbar-nav li a:hover{
+		    transform: scale(1.1);
+		}
+    </style>
+
 
 
   </head>
