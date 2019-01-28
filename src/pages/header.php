@@ -42,7 +42,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    <img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: fixed;">
+    <img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: absolute;">
 
     <style type="text/css">
 
@@ -61,7 +61,7 @@
 	<!-- Logo Nav Bar -->
 
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
+		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: absolute; margin: auto;  padding-left: 2em; margin-top: 5%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -79,9 +79,9 @@
 			  <li class="nav-item">
 			    <a class="nav-link" href="index.php?page=package" style="color: #620365;">Packages</a>
 			  </li>
-			  <li class="nav-item">
+<!-- 			  <li class="nav-item">
 			    <a class="nav-link" href="index.php?page=registration" style="color: #620365;">Registration</a>
-			  </li>
+			  </li> -->
 			  <li class="nav-item">
 			    <a class="nav-link" href="index.php?page=contact" style="color: #620365;">Contact Us</a>
 			  </li>

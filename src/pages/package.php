@@ -30,81 +30,81 @@
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic1.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic2.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic3.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic4.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic5.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic6.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic7.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic8.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic9.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 		<div class="card">
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic10.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Card title</h5>
-	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-	    		<a href="#" class="btn btn-primary">Register</a>
+	    		<h5 class="card-title">Product Title</h5>
+	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
+	    		<a href="#" class="btn btn-outline-primary">Register Now</a>
 	  		</div>
 		</div>
 	</div>
