@@ -46,10 +46,9 @@
 		break;
   		default:
   			# code...
-  			include 'header.php';
   			include 'home.php';
   		break;
   	}
-?>
 
-<?php include 'footer.php'; ?>
+  	include 'footer.php';
+?>
