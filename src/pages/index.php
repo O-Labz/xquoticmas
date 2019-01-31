@@ -32,7 +32,7 @@
 		case 'registrationdone':
 			# code...
 			include 'header.php';
-	  		include 'registration.php';
+	  		include 'package.php';
 		break;
 	  	case 'contact':
 			# code...

@@ -10,6 +10,18 @@
   }
 ?>
 
+<style type="text/css">
+  .container{
+    width: 55%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    padding-left: 2em;
+    margin-top: 15%;
+  }
+</style>
+
 <div class="container my-container">
   <form action="sendcomment.php" method="POST" enctype="multipart/form-data">
     <div class="form-row">

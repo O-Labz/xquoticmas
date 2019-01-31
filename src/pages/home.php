@@ -55,35 +55,41 @@
 	<br>
 	<!-- Logo Nav Bar -->
 
+	<style type="text/css">
+		a{
+			font-size: 1.9em;
+			font-family: Baskerville;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		a:hover{
+		    transform: scale(1.1);
+		    color: #ffffff;
+		}
+	</style>
+
 	<header>
-		<img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 20%; position: fixed;">
-		<nav class="navbar navbar-expand-lg navbar-light" style="width: 60%; position: fixed; margin: auto;  padding-left: 2em; margin-top: 6%; right: 0; left: 0; font-size: 1.9em; font-family: Baskerville; font-weight: bold; ">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarText">
-		    <ul class="navbar-nav mr-auto">
-			  <li class="nav-item">
-			    <a class="nav-link active" href="index.php?page=home" >Home</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=about">About Us</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=gallery">Gallery</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=package">Packages</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=registration" >Registration</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="index.php?page=contact">Contact Us</a>
-			  </li>
-		    </ul>
-		  </div>
-		</nav>
+		<img src="/xauticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 25%; position: fixed; right: 0; left: 0;">
+		<div class="container fixed-top" style="position: fixed; margin-top: 10.5%; padding-left: 5em;">
+			<div class="row justify-content-md-center">
+				    <div class="col-md-auto">
+				    		<a class="nav-link active" href="index.php?page=home">Home</a>
+					</div>
+					<div class="col-md-auto">
+				    		<a class="nav-link" href="index.php?page=about">About Us</a>
+					</div>
+				    <div class="col-md-auto">
+				    		<a class="nav-link" href="index.php?page=gallery">Gallery</a>
+			    	</div>
+			    	<div class="col-md-auto">
+				    		<a class="nav-link" href="index.php?page=package">Packages</a>
+			    	</div>
+			    	<div class="col-md-auto">
+				    		<a class="nav-link" href="index.php?page=contact">Contact Us</a>
+			    	</div>
+				</div>
+			</div>
+		</div>
 	</header>
 	
 
