@@ -61,93 +61,116 @@
 <div class="my-gallery">
 	<div class="row">
 		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic1.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic1.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic2.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic2.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic3.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic3.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic4.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic4.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic5.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic5.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic6.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic6.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic7.jpg" alt="Card image cap">
-	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic7.jpg" data-price="2000.00" >Register Now</button>
-	  		</div>
-		</div>
-		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
+			<div class="title-body"><h4 class="card-head">Build-A-Package</h4></div>
 	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic8.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic8.jpg" data-price="2000.00" >Register Now</button>
+	    		<h5 class="card-title">Package Contents</h5>
+	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
+	    		<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Build-A-Package" data-picture="/xauticmas/assets/gallery/pic8.jpg" data-price="2000.00" >Customize Now</button>
 	  		</div>
 		</div>
 		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic9.jpg" alt="Card image cap">
+			<div class="title-body"><h4 class="card-head">Drinks Only Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic1.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic9.jpg" data-price="2000.00" >Register Now</button>
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mug</li>
+				<li>Premium Mixed Drinks</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Drinks Only Package" data-picture="/xauticmas/assets/gallery/pic1.jpg" data-price="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
-			<div class="title-body"><h4 class="card-head">Product Title</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic10.jpg" alt="Card image cap">
+			<div class="title-body"><h4 class="card-head">T-Shirt &amp; Drinks Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic2.jpg" alt="Card image cap">
 	  		<div class="card-body">
-	    		<h5 class="card-title">Product Title</h5>
-	    		<p class="card-text">Some quick example text to build on the Product Title and make up the bulk of the card's content.</p>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Bachannal" data-picture="/xauticmas/assets/gallery/pic10.jpg" data-price="2000.00" >Register Now</button>
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mug</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Shirt</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/xauticmas/assets/gallery/pic2.jpg" data-price="2000.00" >Register Now</button>
+	  		</div>
+		</div>
+		<div class="card">
+			<div class="title-body"><h4 class="card-head">Costume &amp; Drinks Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic3.jpg" alt="Card image cap">
+	  		<div class="card-body">
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mug</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Costume</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Costume &amp; Drinks Package" data-picture="/xauticmas/assets/gallery/pic3.jpg" data-price="2000.00" >Register Now</button>
+	  		</div>
+		</div>
+		<div class="card">
+			<div class="title-body"><h4 class="card-head">Basic T-Shirt Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic4.jpg" alt="Card image cap">
+	  		<div class="card-body">
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mason Jar</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Shirt</li>
+				<li>Xquotic Tote Bag</li>
+				<li>Xquotic Wave Rag</li>
+				<li>Xquotic Waterproof Phone Case</li>
+				<li>Mardi Gras</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic T-Shirt Package" data-picture="/xauticmas/assets/gallery/pic4.jpg" data-price="2000.00" >Register Now</button>
+	  		</div>
+		</div>
+		<div class="card">
+			<div class="title-body"><h4 class="card-head">Basic Costume Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic5.jpg" alt="Card image cap">
+	  		<div class="card-body">
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mason Jar</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Costume</li>
+				<li>Xquotic Tote Bag</li>
+				<li>Xquotic Wave Rag</li>
+				<li>Xquotic Waterproof Phone Case</li>
+				<li>Mardi Gras</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic Costume Package" data-picture="/xauticmas/assets/gallery/pic5.jpg" data-price="2000.00" >Register Now</button>
+	  		</div>
+		</div>
+		<div class="card">
+			<div class="title-body"><h4 class="card-head">Premium T-Shirt Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic6.jpg" alt="Card image cap">
+	  		<div class="card-body">
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mason Jar</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Road March Shirt</li>
+				<li>Xquotic J&#39;Ouvert Shirt</li>
+				<li>Xquotic Shorts</li>
+				<li>Xquotic Tote Bag</li>
+				<li>Xquotic Wave Rag</li>
+				<li>Xquotic Waterproof Phone Case</li>
+				<li>Xquotic Metal Phone Ring</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium T-Shirt Package" data-picture="/xauticmas/assets/gallery/pic6.jpg" data-price="2000.00" >Register Now</button>
+	  		</div>
+		</div>
+		<div class="card">
+			<div class="title-body"><h4 class="card-head">Premium Costume Package</h4></div>
+	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic7.jpg" alt="Card image cap">
+	  		<div class="card-body">
+	    		<h5 class="card-title">Package Contents</h5>
+				<li>Xquotic Mason Jar</li>
+				<li>Premium Mixed Drinks</li>
+				<li>Xquotic Costume</li>
+				<li>Xquotic J&#39;Ouvert Shirt</li>
+				<li>Xquotic Tote Bag</li>
+				<li>Xquotic Wave Rag</li>
+				<li>Xquotic Waterproof Phone Case</li>
+				<li>Xquotic Metal Phone Ring</li>
+				<li>Mardi Gras</li>
+				<br>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium Costume Package" data-picture="/xauticmas/assets/gallery/pic7.jpg" data-price="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 
