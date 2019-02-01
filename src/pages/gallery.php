@@ -20,14 +20,14 @@
 
 
 <div class="my-gallery">
-	<a href="/xauticmas/assets/gallery/pic1.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic1.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic2.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic2.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic3.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic3.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic4.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic4.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic5.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic5.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic6.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic6.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic7.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic7.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic8.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic8.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic9.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic9.jpg"></a>
-	<a href="/xauticmas/assets/gallery/pic10.jpg" data-lightbox="xauticm-gallery"><img src="/xauticmas/assets/gallery/pic10.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic1.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic1.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic2.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic2.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic3.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic3.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic4.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic4.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic5.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic5.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic6.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic6.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic7.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic7.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic8.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic8.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic9.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic9.jpg"></a>
+	<a href="/Xquoticmas/assets/gallery/pic10.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/pic10.jpg"></a>
 </div>

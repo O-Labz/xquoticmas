@@ -4,7 +4,7 @@
   if ($trigger  == 'registrationdone') {
     # code...
     echo '<script type="text/javascript">';
-    echo 'swal("Good job!", "Registration Complete!", "success")';
+    echo 'swal("Registration Complete!", "Please check your email for order details", "success")';
     echo '</script>';
   }
 ?>
@@ -62,52 +62,52 @@
 	<div class="row">
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Build-A-Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic8.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic8.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
 	    		<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Build-A-Package" data-picture="/xauticmas/assets/gallery/pic8.jpg" data-price="2000.00" >Customize Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/gallery/pic8.jpg" data-ordertotal="2000.00" >Customize Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Drinks Only Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic1.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic1.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
 				<li>Premium Mixed Drinks</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Drinks Only Package" data-picture="/xauticmas/assets/gallery/pic1.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/gallery/pic1.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">T-Shirt &amp; Drinks Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic2.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic2.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Shirt</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/xauticmas/assets/gallery/pic2.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Costume &amp; Drinks Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic3.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic3.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Costume</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Costume &amp; Drinks Package" data-picture="/xauticmas/assets/gallery/pic3.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic3.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Basic T-Shirt Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic4.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic4.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -118,12 +118,12 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic T-Shirt Package" data-picture="/xauticmas/assets/gallery/pic4.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic4.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Basic Costume Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic5.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic5.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -134,12 +134,12 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic Costume Package" data-picture="/xauticmas/assets/gallery/pic5.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/gallery/pic5.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Premium T-Shirt Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic6.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic6.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -152,12 +152,12 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Xquotic Metal Phone Ring</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium T-Shirt Package" data-picture="/xauticmas/assets/gallery/pic6.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic6.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Premium Costume Package</h4></div>
-	  		<img class="card-img-top" src="/xauticmas/assets/gallery/pic7.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic7.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -170,17 +170,17 @@
 				<li>Xquotic Metal Phone Ring</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium Costume Package" data-picture="/xauticmas/assets/gallery/pic7.jpg" data-price="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/gallery/pic7.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="drinksModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Product title</h5>
+        <h5 class="modal-title" id="drinksModal">Product title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -189,7 +189,7 @@
       	  <div class="container-fluid">
 		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="pic" name="pic" src="" alt="Card image cap"></div>
 		    <div class="row">
-		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="price" name="price" disabled></input></div>
+		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" value="ordertotal" readonly></input></div>
 		    </div>
 			<div class="container my-container">
 			  <form action="registeruser.php" method="POST" enctype="multipart/form-data">
@@ -233,6 +233,11 @@
 			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" placeholder="Quantity" required>
 			      </div>
 			    </div>
+			    <label for="inputState"></label>
+			    <select id="inputState" class="form-control" id="package" name="package" required>
+			          <option selected>Drinks Only</option>
+			     </select>
+			    <label for="inputState"></label>
 			    <div class="form-group">
 			      <div class="form-check">
 			        <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -253,18 +258,32 @@
   </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <!-- Change modal contents with jquery -->
 <script type="text/javascript">
-	$('#exampleModal').on('show.bs.modal', function (event) {
+	$('#drinksModal').on('show.bs.modal', function (event) {
 	  var button = $(event.relatedTarget)
 	  var recipienttitle = button.data('title')
 	  var recipientpicture = button.data('picture')
-	  var recipientprice = button.data('price')
+	  var recipientprice = button.data('ordertotal')
 	  var modal = $(this)
 	  modal.find('.modal-title').text(recipienttitle)
 	  modal.find('.modal-body #pic').val(recipientpicture)
-	  modal.find('.modal-body #price').val(recipientprice)
+	  modal.find('.modal-body #ordertotal').val(recipientprice)
 	  //Now change immage src using jquery
 	  $('#pic').attr('src',recipientpicture)
+	  $.post('registeruser.php', 'ordertotal=' + $(this).val(recipientprice), function (response) {
+      alert(response);});
 	})
 </script>

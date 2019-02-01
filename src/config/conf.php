@@ -12,8 +12,8 @@
 	DEFINE('DB_ROOTUSER', 'root');
 	DEFINE('DB_ROOTPASSWORD', 'turtledove@1##');
 
-	DEFINE('CONTACT_LINK', 'Location: http://localhost:1234/xauticmas/src/pages/index.php?page=contactdone');
-	DEFINE('REGISTER_LINK', 'Location: http://localhost:1234/xauticmas/src/pages/index.php?page=registrationdone');
+	DEFINE('CONTACT_LINK', 'Location: http://localhost:1234/Xquoticmas/src/pages/index.php?page=contactdone');
+	DEFINE('REGISTER_LINK', 'Location: http://localhost:1234/Xquoticmas/src/pages/index.php?page=registrationdone');
 
 	$abc = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) or die("Could not connect to MYSQL: ".mysqli_connect_error());
 
