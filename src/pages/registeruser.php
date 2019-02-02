@@ -21,6 +21,40 @@
 	  }
 	}
 
+	$packagename = $_GET['packagename'];
+	$packageprice = '';
+
+	//Get data from market view table
+	$query = "SELECT * FROM `packages` WHERE `name` = '$packagename'";
+
+
+	// Get a response from the database by sending the connection
+	// and the query
+	$response = @mysqli_query($abc, $query);
+
+
+	// If the query executed properly proceed
+	if($response){
+
+		// <!-- populate table from mysql database -->
+		while ($row = mysqli_fetch_array($response)) 
+		{
+		$packagename = $row['name'];
+		$packageprice = $row['price'];
+		echo "in yuh kmkelkg lkgmk";
+	}
+	} else {
+
+		echo "Couldn't issue database query<br />";
+
+		echo mysqli_error($abc);
+
+	}
+
+
+	$package = $packagename;
+	$ordertotal = $packageprice * $quantity;
+
 	
 
 	// THIS CODE CHECKS THE DATABASES CONNECTION

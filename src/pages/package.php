@@ -189,10 +189,10 @@
       	  <div class="container-fluid">
 		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="pic" name="pic" src="" alt="Card image cap"></div>
 		    <div class="row">
-		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" value="ordertotal" readonly></input></div>
+		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
 		    </div>
 			<div class="container my-container">
-			  <form action="registeruser.php" method="POST" enctype="multipart/form-data">
+			  <form action="registeruser.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
 			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
