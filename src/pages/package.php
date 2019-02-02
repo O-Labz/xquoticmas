@@ -67,7 +67,7 @@
 	    		<h5 class="card-title">Package Contents</h5>
 	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
 	    		<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/gallery/pic8.jpg" data-ordertotal="2000.00" >Customize Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/gallery/pic8.jpg" data-ordertotal="2000.00 JMD" >Customize Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -78,7 +78,7 @@
 				<li>Xquotic Mug</li>
 				<li>Premium Mixed Drinks</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/gallery/pic1.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/gallery/pic1.jpg" data-ordertotal="2000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -90,7 +90,7 @@
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Shirt</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#tshirtModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="4000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -192,7 +192,7 @@
 		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
 		    </div>
 			<div class="container my-container">
-			  <form action="registeruser.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
+			  <form action="drinksonly.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
 			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
@@ -258,6 +258,116 @@
   </div>
 </div>
 
+<!-- T-Shirt Modal -->
+<div class="modal fade" id="tshirtModal" tabindex="-1" role="dialog" aria-labelledby="tshirtModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tshirtModal">Product title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	  <div class="container-fluid">
+		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="tpic" name="tpic" src="" alt="Card image cap"></div>
+		    <div class="row">
+		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
+		    </div>
+			<div class="container my-container">
+			  <form action="tshirt.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="text" class="form-control" placeholder="Last name" id="lastname" name="lastname" required>
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputAddress"></label>
+			      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputAddress2"></label>
+			      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
+			    </div>
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <label for="inputCity"></label>
+			        <input type="text" class="form-control" placeholder="Nationality" id="nationality" name="nationality" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <label for="inputState"></label>
+			        <select id="inputState" class="form-control" id="gender" name="gender" required>
+			          <option selected>Gender...</option>
+			          <option>Male</option>
+			          <option>Female</option>
+			        </select>
+			      </div>
+			    </div>
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <input type="number" class="form-control" id="age" name="age"  min="18" max="75" placeholder="Age" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" placeholder="Quantity" required>
+			      </div>
+			    </div>
+			    <label for="inputState"></label>
+			    <select id="inputState" class="form-control" id="package" name="package" required>
+			          <option selected>T-Shirt &amp; Drinks</option>
+			     </select>
+			     <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" required>
+			          <option selected>Shirt Size...</option>
+			          <option>XS</option>
+			          <option>S</option>
+			          <option>M</option>
+			          <option>L</option>
+			          <option>XL</option>
+			          <option>XXL</option>
+			        </select>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" required>
+			          <option selected>Shirt Colour...</option>
+			          <option>Black</option>
+			          <option>White</option>
+			        </select>
+			      </div>
+			    </div>
+			    <label for="inputState">Choose Payment Method: </label>
+			    <br>
+			    <input type="radio" id="paymenttype" name="paymenttype" value="bank" required> Bank Transfer
+			    <br>
+				<input type="radio" id="paymenttype" name="paymenttype" value="paypal"> Paypal
+			    <label for="inputState"></label>
+			    <div class="form-group">
+			      <div class="form-check">
+			        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+			        <label class="form-check-label" for="gridCheck">
+			          I agree that all information entered here about me is true and correct.
+			        </label>
+			      </div>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="submit" class="btn btn-primary">Register</button>
+			    </div>
+			  </form>
+			</div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <br>
 <br>
 <br>
@@ -285,5 +395,19 @@
 	  $('#pic').attr('src',recipientpicture)
 	  $.post('registeruser.php', 'ordertotal=' + $(this).val(recipientprice), function (response) {
       alert(response);});
+	})
+</script>
+<script type="text/javascript">
+	$('#tshirtModal').on('show.bs.modal', function (event) {
+	  var button = $(event.relatedTarget)
+	  var recipienttitle = button.data('title')
+	  var recipientpic = button.data('picture')
+	  var recipientprice = button.data('ordertotal')
+	  var modal = $(this)
+	  modal.find('.modal-title').text(recipienttitle)
+	  modal.find('.modal-body #pic').val(recipientpic)
+	  modal.find('.modal-body #ordertotal').val(recipientprice)
+	  //Now change immage src using jquery
+	  $('#tpic').attr('src',recipientpic)
 	})
 </script>
