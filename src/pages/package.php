@@ -192,7 +192,7 @@
 		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
 		    </div>
 			<div class="container my-container">
-			  <form action="drinksonly.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
+			  <form action="drinksonly.php" method="POST" enctype="multipart/form-data">
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
 			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
@@ -217,7 +217,7 @@
 			      <div class="form-group col-md-6">
 			        <label for="inputState"></label>
 			        <select id="inputState" class="form-control" id="gender" name="gender" required>
-			          <option selected>Gender...</option>
+			          <option value="" disabled selected>Gender...</option>
 			          <option>Male</option>
 			          <option>Female</option>
 			        </select>
@@ -230,123 +230,149 @@
 			      </div>
 			      <div class="form-group col-md-6">
 			        <label for="inputZip"></label>
-			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" placeholder="Quantity" required>
+			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" placeholder="Package Quantity" required>
 			      </div>
 			    </div>
-			    <label for="inputState"></label>
-			    <select id="inputState" class="form-control" id="package" name="package" required>
-			          <option selected>Drinks Only</option>
-			     </select>
-			    <label for="inputState"></label>
-			    <div class="form-group">
-			      <div class="form-check">
-			        <input class="form-check-input" type="checkbox" id="gridCheck" required>
-			        <label class="form-check-label" for="gridCheck">
-			          I agree that all information entered here about me is true and correct.
-			        </label>
-			      </div>
-			    </div>
-			    <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        <button type="submit" class="btn btn-primary">Register</button>
-			    </div>
-			  </form>
-			</div>
-		  </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- T-Shirt Modal -->
-<div class="modal fade" id="tshirtModal" tabindex="-1" role="dialog" aria-labelledby="tshirtModal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="tshirtModal">Product title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	  <div class="container-fluid">
-		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="tpic" name="tpic" src="" alt="Card image cap"></div>
-		    <div class="row">
-		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
-		    </div>
-			<div class="container my-container">
-			  <form action="tshirt.php?packagename=drinksonly" method="POST" enctype="multipart/form-data">
+			    <hr>
+			    <label for="inputState">Select a Package</label>
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
-			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
+			        <input type="radio" id="package" name="package" value="drinksonly"> Drinks Only
 			      </div>
 			      <div class="form-group col-md-6">
-			        <input type="text" class="form-control" placeholder="Last name" id="lastname" name="lastname" required>
+			        <input type="radio" id="package"  name="package" value="tshirtanddrinks"> T-Shirt &amp; Drinks
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="costumeandrinks"> Costume &amp; Drinks
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="basictshirtpackage"> Basic T-Shirt
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="basiccostumepackage"> Basic Costume
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="premiumtshirtpackage"> Premium T-Shirt
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="premiumcostumepackage"> Premium Costume
 			      </div>
 			    </div>
-			    <div class="form-group">
-			      <label for="inputAddress"></label>
-			      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-			    </div>
-			    <div class="form-group">
-			      <label for="inputAddress2"></label>
-			      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
-			    </div>
+			    <hr>
+			    <div id="drinksonlytextboxes" style="display: none"> 
+				</div>
+				<div id="tshirtanddrinkstextboxes" style="display: none">
+				     <div class="form-row">
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
+				          <option value="" disabled selected>Shirt Size...</option>
+				          <option>XS</option>
+				          <option>S</option>
+				          <option>M</option>
+				          <option>L</option>
+				          <option>XL</option>
+				          <option>XXL</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
+				          <option value="" disabled selected>Shirt Colour...</option>
+				          <option>Black</option>
+				          <option>White</option>
+				        </select>
+				      </div>
+				    </div>
+				</div>
+				<div id="costumeandrinkstextboxes" style="display: none">
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
-			        <label for="inputCity"></label>
-			        <input type="text" class="form-control" placeholder="Nationality" id="nationality" name="nationality" required>
+			        <input type="radio" id="subpackage" name="subpackage" value="androsfront"> Andros Frontline
 			      </div>
 			      <div class="form-group col-md-6">
-			        <label for="inputState"></label>
-			        <select id="inputState" class="form-control" id="gender" name="gender" required>
-			          <option selected>Gender...</option>
-			          <option>Male</option>
-			          <option>Female</option>
-			        </select>
+			        <input type="radio" id="subpackage"  name="subpackage" value="androsback"> Andros Backline
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="subpackage"  name="subpackage" value="paradisefront"> Paradise Frontline
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="subpackage"  name="subpackage" value="paradiseback"> Paradise Backline
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="subpackage"  name="subpackage" value="exuma"> Exuma
 			      </div>
 			    </div>
-			    <div class="form-row">
-			      <div class="form-group col-md-6">
-			        <label for="inputZip"></label>
-			        <input type="number" class="form-control" id="age" name="age"  min="18" max="75" placeholder="Age" required>
-			      </div>
-			      <div class="form-group col-md-6">
-			        <label for="inputZip"></label>
-			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" placeholder="Quantity" required>
-			      </div>
-			    </div>
-			    <label for="inputState"></label>
-			    <select id="inputState" class="form-control" id="package" name="package" required>
-			          <option selected>T-Shirt &amp; Drinks</option>
-			     </select>
-			     <div class="form-row">
-			      <div class="form-group col-md-6">
-			        <label for="inputZip"></label>
-			        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" required>
-			          <option selected>Shirt Size...</option>
-			          <option>XS</option>
-			          <option>S</option>
-			          <option>M</option>
-			          <option>L</option>
-			          <option>XL</option>
-			          <option>XXL</option>
-			        </select>
-			      </div>
-			      <div class="form-group col-md-6">
-			        <label for="inputZip"></label>
-			        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" required>
-			          <option selected>Shirt Colour...</option>
-			          <option>Black</option>
-			          <option>White</option>
-			        </select>
-			      </div>
-			    </div>
+				</div>
+				<div id="basiccostumepackagetextboxes" style="display: none">
+				    Company Name: <input type="text" hidden="true"/> 
+				    Designation: <input type="text" hidden="true"/> 
+				    Year_of_Experience: <input type="text" hidden="true"/> 
+				</div>
+				<div id="premiumtshirtpackagetextboxes" style="display: none">
+				    Company Name: <input type="text" hidden="true"/> 
+				    Designation: <input type="text" hidden="true"/> 
+				    Year_of_Experience: <input type="text" hidden="true"/> 
+				</div>
+			    <div id="premiumcostumepackagetextboxes" style="display: none"> 
+				</div>
+				<hr>
+					<div id="androstextboxes" style="display: none">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+					      </div>
+					    </div>
+					</div>
+					<div id="paradisetextboxes" style="display: none">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Navel to Crotch" id="navel" name="navel" >
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Shoulder to Underbust" id="shoulder" name="shoulder" >
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Width between each Breast" id="breast" name="breast" >
+					      </div>
+					    </div>
+					</div>
+					<div id="exumatextboxes" style="display: none">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bra Size" id="bra" name="bra" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Panty Size" id="panty" name="panty" >
+					      </div>
+					    </div>
+					</div>
+				<hr>
 			    <label for="inputState">Choose Payment Method: </label>
 			    <br>
 			    <input type="radio" id="paymenttype" name="paymenttype" value="bank" required> Bank Transfer
 			    <br>
 				<input type="radio" id="paymenttype" name="paymenttype" value="paypal"> Paypal
+				<hr>
 			    <label for="inputState"></label>
 			    <div class="form-group">
 			      <div class="form-check">
@@ -397,17 +423,111 @@
       alert(response);});
 	})
 </script>
+
+<!-- Change package options -->
 <script type="text/javascript">
-	$('#tshirtModal').on('show.bs.modal', function (event) {
-	  var button = $(event.relatedTarget)
-	  var recipienttitle = button.data('title')
-	  var recipientpic = button.data('picture')
-	  var recipientprice = button.data('ordertotal')
-	  var modal = $(this)
-	  modal.find('.modal-title').text(recipienttitle)
-	  modal.find('.modal-body #pic').val(recipientpic)
-	  modal.find('.modal-body #ordertotal').val(recipientprice)
-	  //Now change immage src using jquery
-	  $('#tpic').attr('src',recipientpic)
-	})
+	$(function() {
+	    $('input[name="package"]').on('click', function() {
+			switch($(this).val()) {
+			  case 'drinksonly':
+			    $('#drinksonlytextboxes').show();
+			    $('#costumeandrinkstextboxes').hide();
+				$('#basictshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    break;
+			  case 'tshirtanddrinks':
+				$('#drinksonlytextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
+				$('#basictshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').show();
+			    break;
+			    case 'costumeandrinks':
+			    $('#drinksonlytextboxes').hide();
+				$('#basictshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    $('#costumeandrinkstextboxes').show();
+			    break;
+			    case 'basictshirt':
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#drinksonlytextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').show();
+			    break;
+			    case 'basiccostume':
+			    $('#drinksonlytextboxes').hide();
+				$('#basictshirtpackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    $('#costumeandrinkstextboxes').show();
+			    break;
+			    case 'premiumtshirt':
+			    $('#drinksonlytextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    $('#basictshirtpackagetextboxes').hide();
+			    $('#basiccostumepackagetextboxes').hide();
+			    $('#premiumtshirtpackagetextboxes').show();
+			    break;
+			    case 'premiumcostume':
+			    $('#drinksonlytextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    $('#basictshirtpackagetextboxes').hide();
+			    $('#basiccostumepackagetextboxes').hide();
+			    $('#premiumtshirtpackagetextboxes').hide();
+			    $('#premiumcostumepackagetextboxes').show();
+			    break;
+			  default:
+			    $('#drinksonlytextboxes').hide();
+			    $('#tshirtanddrinkstextboxes').hide();
+			    $('#basictshirtpackagetextboxes').hide();
+			    $('#basiccostumepackagetextboxes').hide();
+			    $('#premiumtshirtpackagetextboxes').hide();
+			    $('#premiumcostumepackagetextboxes').hide();
+			}
+	    });
+	    $('input[name="subpackage"]').on('click', function() {
+			switch($(this).val()) {
+			  case 'androsfront':
+			    $('#paradisetextboxes').hide();
+				$('#exumatextboxes').hide();
+				$('#androstextboxes').show();
+			    break;
+			  case 'androsback':
+			    $('#paradisetextboxes').hide();
+				$('#exumatextboxes').hide();
+				$('#androstextboxes').show();
+			    break;
+			  case 'paradisefront':
+			    $('#androstextboxes').hide();
+				$('#exumatextboxes').hide();
+				$('#paradisetextboxes').show();
+			    break;
+			  case 'paradiseback':
+			    $('#androstextboxes').hide();
+				$('#exumatextboxes').hide();
+				$('#paradisetextboxes').show();
+			    break;
+			  case 'exuma':
+			  	$('#paradisetextboxes').hide();
+			    $('#androstextboxes').hide();
+			    $('#exumatextboxes').show();
+			    break;
+			  default:
+			    $('#exumatextboxes').hide();
+			    $('#paradisetextboxes').hide();
+			    $('#androstextboxes').hide();
+			}
+	    });
+	});
 </script>
