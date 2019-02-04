@@ -246,23 +246,34 @@
 			        <input type="radio" id="package"  name="package" value="costumeandrinks"> Costume &amp; Drinks
 			      </div>
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="basictshirtpackage"> Basic T-Shirt
+			        <input type="radio" id="package"  name="package" value="basictshirt"> Basic T-Shirt
 			      </div>
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="basiccostumepackage"> Basic Costume
+			        <input type="radio" id="package"  name="package" value="basiccostume"> Basic Costume
 			      </div>
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="premiumtshirtpackage"> Premium T-Shirt
+			        <input type="radio" id="package"  name="package" value="premiumtshirt"> Premium T-Shirt
 			      </div>
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="premiumcostumepackage"> Premium Costume
+			        <input type="radio" id="package"  name="package" value="premiumcostume"> Premium Costume
 			      </div>
 			    </div>
 			    <hr>
+
 			    <div id="drinksonlytextboxes" style="display: none"> 
 				</div>
+
 				<div id="tshirtanddrinkstextboxes" style="display: none">
 				     <div class="form-row">
+				      <div class="form-group col-md-12">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
+				          <option value="" disabled selected>T-Shirt Style</option>
+				          <option>Tank Top</option>
+				          <option>T-Shirt</option>
+				          <option>Tube Top</option>
+				        </select>
+				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
@@ -285,55 +296,132 @@
 				      </div>
 				    </div>
 				</div>
+
 				<div id="costumeandrinkstextboxes" style="display: none">
-			    <div class="form-row">
-			      <div class="form-group col-md-6">
-			        <input type="radio" id="subpackage" name="subpackage" value="androsfront"> Andros Frontline
-			      </div>
-			      <div class="form-group col-md-6">
-			        <input type="radio" id="subpackage"  name="subpackage" value="androsback"> Andros Backline
-			      </div>
-			      <div class="form-group col-md-6">
-			        <input type="radio" id="subpackage"  name="subpackage" value="paradisefront"> Paradise Frontline
-			      </div>
-			      <div class="form-group col-md-6">
-			        <input type="radio" id="subpackage"  name="subpackage" value="paradiseback"> Paradise Backline
-			      </div>
-			      <div class="form-group col-md-6">
-			        <input type="radio" id="subpackage"  name="subpackage" value="exuma"> Exuma
-			      </div>
-			    </div>
+				    <div class="form-row">
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicandrosback"> Andros Backline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadiseback"> Paradise Backline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma
+				      </div>
+				    </div>
 				</div>
-				<div id="basiccostumepackagetextboxes" style="display: none">
-				    Company Name: <input type="text" hidden="true"/> 
-				    Designation: <input type="text" hidden="true"/> 
-				    Year_of_Experience: <input type="text" hidden="true"/> 
+
+				<div id="premiumcostumepackagetextboxes" style="display: none">
+				    <div class="form-row">
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage" name="subpackage" value="premiumandrosfront"> Andros Frontline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="premiumandrosback"> Andros Backline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="premiumparadisefront"> Paradise Frontline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="premiumparadiseback"> Paradise Backline
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="premiumexuma"> Exuma
+				      </div>
+				    </div>
 				</div>
+
+
+
+
 				<div id="premiumtshirtpackagetextboxes" style="display: none">
-				    Company Name: <input type="text" hidden="true"/> 
-				    Designation: <input type="text" hidden="true"/> 
-				    Year_of_Experience: <input type="text" hidden="true"/> 
+				     <div class="form-row">
+				      <div class="form-group col-md-12">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+				          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+				          <option>XS</option>
+				          <option>S</option>
+				          <option>M</option>
+				          <option>L</option>
+				          <option>XL</option>
+				          <option>XXL</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
+				          <option value="" disabled selected>T-Shirt Style</option>
+				          <option>Tank Top</option>
+				          <option>T-Shirt</option>
+				          <option>Tube Top</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
+				          <option value="" disabled selected>T-Shirt Size:</option>
+				          <option>XS</option>
+				          <option>S</option>
+				          <option>M</option>
+				          <option>L</option>
+				          <option>XL</option>
+				          <option>XXL</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shortssize" name="shortssize" >
+				          <option value="" disabled selected>Shorts Size:</option>
+				          <option>S</option>
+				          <option>M</option>
+				          <option>L</option>
+				          <option>XL</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
+				          <option value="" disabled selected>T-Shirt Color:</option>
+				          <option>Black</option>
+				          <option>White</option>
+				        </select>
+				      </div>
+				    </div>
 				</div>
-			    <div id="premiumcostumepackagetextboxes" style="display: none"> 
+
+
+
+
+
+
+
+			    <div id="basiccostumepackagetextboxes" style="display: none"> 
 				</div>
 				<hr>
-					<div id="androstextboxes" style="display: none">
-					<div class="form-row">
-					      <div class="form-group col-md-6">
-					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
-					      </div>
-					      <div class="form-group col-md-6">
-					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
-					      </div>
-					      <div class="form-group col-md-6">
-					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
-					      </div>
-					      <div class="form-group col-md-6">
-					        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
-					      </div>
+					<div id="basicandrostextboxes" style="display: none">
+						<div class="form-row">
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+						      </div>
 					    </div>
 					</div>
-					<div id="paradisetextboxes" style="display: none">
+					<div id="basicparadisetextboxes" style="display: none">
 					<div class="form-row">
 					      <div class="form-group col-md-6">
 					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
@@ -356,8 +444,99 @@
 					      </div>
 					    </div>
 					</div>
-					<div id="exumatextboxes" style="display: none">
+					<div id="basicexumatextboxes" style="display: none">
 					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bra Size" id="bra" name="bra" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Panty Size" id="panty" name="panty" >
+					      </div>
+					    </div>
+					</div>
+
+
+
+
+			    <div id="premiumcostumepackagetextboxes" style="display: none"> 
+				</div>
+					<div id="premiumandrostextboxes" style="display: none">
+						<div class="form-row">
+							<div class="form-group col-md-12">
+						        <label for="inputZip"></label>
+						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+						          <option>XS</option>
+						          <option>S</option>
+						          <option>M</option>
+						          <option>L</option>
+						          <option>XL</option>
+						          <option>XXL</option>
+						        </select>
+						     </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+						      </div>
+					    </div>
+					</div>
+					<div id="premiumparadisetextboxes" style="display: none">
+					<div class="form-row">
+						<div class="form-group col-md-12">
+						        <label for="inputZip"></label>
+						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+						          <option>XS</option>
+						          <option>S</option>
+						          <option>M</option>
+						          <option>L</option>
+						          <option>XL</option>
+						          <option>XXL</option>
+						        </select>
+						  </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Navel to Crotch" id="navel" name="navel" >
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Shoulder to Underbust" id="shoulder" name="shoulder" >
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Width between each Breast" id="breast" name="breast" >
+					      </div>
+					    </div>
+					</div>
+					<div id="premiumexumatextboxes" style="display: none">
+					<div class="form-row">
+						<div class="form-group col-md-12">
+					        <label for="inputZip"></label>
+					        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+					          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+					          <option>XS</option>
+					          <option>S</option>
+					          <option>M</option>
+					          <option>L</option>
+					          <option>XL</option>
+					          <option>XXL</option>
+					        </select>
+					     </div>
 					      <div class="form-group col-md-6">
 					        <input type="text" class="form-control" placeholder="Bra Size" id="bra" name="bra" >
 					      </div>
@@ -430,103 +609,280 @@
 	    $('input[name="package"]').on('click', function() {
 			switch($(this).val()) {
 			  case 'drinksonly':
-			    $('#drinksonlytextboxes').show();
-			    $('#costumeandrinkstextboxes').hide();
-				$('#basictshirtpackagetextboxes').hide();
-				$('#basiccostumepackagetextboxes').hide();
-				$('#premiumtshirtpackagetextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#drinksonlytextboxes').show();
 			    break;
 			  case 'tshirtanddrinks':
 				$('#drinksonlytextboxes').hide();
 				$('#costumeandrinkstextboxes').hide();
-				$('#basictshirtpackagetextboxes').hide();
-				$('#basiccostumepackagetextboxes').hide();
-				$('#premiumtshirtpackagetextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').show();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#tshirtanddrinkstextboxes').show();
 			    break;
 			    case 'costumeandrinks':
-			    $('#drinksonlytextboxes').hide();
-				$('#basictshirtpackagetextboxes').hide();
-				$('#basiccostumepackagetextboxes').hide();
-				$('#premiumtshirtpackagetextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
-			    $('#costumeandrinkstextboxes').show();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
 			    break;
 			    case 'basictshirt':
-				$('#basiccostumepackagetextboxes').hide();
-				$('#premiumtshirtpackagetextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#drinksonlytextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').show();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#tshirtanddrinkstextboxes').show();
 			    break;
 			    case 'basiccostume':
-			    $('#drinksonlytextboxes').hide();
-				$('#basictshirtpackagetextboxes').hide();
-				$('#premiumtshirtpackagetextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
-			    $('#costumeandrinkstextboxes').show();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
 			    break;
 			    case 'premiumtshirt':
-			    $('#drinksonlytextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
 				$('#premiumcostumepackagetextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
-			    $('#basictshirtpackagetextboxes').hide();
-			    $('#basiccostumepackagetextboxes').hide();
-			    $('#premiumtshirtpackagetextboxes').show();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').show();
 			    break;
 			    case 'premiumcostume':
-			    $('#drinksonlytextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
-			    $('#basictshirtpackagetextboxes').hide();
-			    $('#basiccostumepackagetextboxes').hide();
-			    $('#premiumtshirtpackagetextboxes').hide();
-			    $('#premiumcostumepackagetextboxes').show();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').show();
 			    break;
 			  default:
-			    $('#drinksonlytextboxes').hide();
-			    $('#tshirtanddrinkstextboxes').hide();
-			    $('#basictshirtpackagetextboxes').hide();
-			    $('#basiccostumepackagetextboxes').hide();
-			    $('#premiumtshirtpackagetextboxes').hide();
-			    $('#premiumcostumepackagetextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
 			}
 	    });
 	    $('input[name="subpackage"]').on('click', function() {
 			switch($(this).val()) {
-			  case 'androsfront':
-			    $('#paradisetextboxes').hide();
-				$('#exumatextboxes').hide();
-				$('#androstextboxes').show();
+			  case 'premiumandrosfront':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#premiumandrostextboxes').show();
+				$('#premiumcostumepackagetextboxes').show();
 			    break;
-			  case 'androsback':
-			    $('#paradisetextboxes').hide();
-				$('#exumatextboxes').hide();
-				$('#androstextboxes').show();
+			  case 'premiumandrosback':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();				
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();				
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').show();
+				$('#premiumandrostextboxes').show();
 			    break;
-			  case 'paradisefront':
-			    $('#androstextboxes').hide();
-				$('#exumatextboxes').hide();
-				$('#paradisetextboxes').show();
+			  case 'premiumparadisefront':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();				
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();				
+				$('#premiumexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').show();
+				$('#premiumparadisetextboxes').show();
 			    break;
-			  case 'paradiseback':
-			    $('#androstextboxes').hide();
-				$('#exumatextboxes').hide();
-				$('#paradisetextboxes').show();
+			  case 'premiumparadiseback':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').show();
+				$('#premiumparadisetextboxes').show();
 			    break;
-			  case 'exuma':
-			  	$('#paradisetextboxes').hide();
-			    $('#androstextboxes').hide();
-			    $('#exumatextboxes').show();
+			  case 'premiumexuma':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').hide();				
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').show();
+				$('#premiumexumatextboxes').show();
 			    break;
+
+			  case 'basicandrosfront':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();				
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
+				$('#basicandrostextboxes').show();
+			    break;
+			  case 'basicandrosback':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();				
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
+				$('#basicandrostextboxes').show();
+			    break;
+			  case 'basicparadisefront':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();				
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+			    $('#basicandrostextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
+				$('#basicparadisetextboxes').show();
+			    break;
+			  case 'basicparadiseback':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();				
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+			    $('#basicandrostextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
+				$('#basicparadisetextboxes').show();
+			    break;
+			  case 'basicexuma':
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+			    $('#basicandrostextboxes').hide();
+				$('#basicparadisetextboxes').hide();
+				$('#basicexumatextboxes').show();
+				$('#costumeandrinkstextboxes').show();
+			    break;
+
 			  default:
-			    $('#exumatextboxes').hide();
-			    $('#paradisetextboxes').hide();
-			    $('#androstextboxes').hide();
+				$('#drinksonlytextboxes').hide();
+				$('#tshirtanddrinkstextboxes').hide();
+				$('#costumeandrinkstextboxes').show();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumtshirtpackagetextboxes').hide();
+				$('#basiccostumepackagetextboxes').hide();
+				$('#premiumcostumepackagetextboxes').hide();
+				$('#premiumandrostextboxes').hide();
+				$('#premiumparadisetextboxes').hide();
+				$('#premiumexumatextboxes').hide();
+			    $('#basicandrostextboxes').hide();
+				$('#basicexumatextboxes').hide();
+				$('#basicparadisetextboxes').hide();
 			}
 	    });
 	});

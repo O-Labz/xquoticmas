@@ -7,7 +7,7 @@
 
 
 	// populate table
-	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtsize', 'shirtcolor', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber');
+	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtstyle', 'shirtsize', 'shirtcolor', 'shortssize', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber');
 
 	// Loop over field names, make sure each one exists and is not empty
 	foreach($required as $field) {
@@ -63,13 +63,13 @@
 
 
 
-	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, shirtsize, shirtcolor, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, jouvert, shirtstyle shirtsize, shirtcolor, shortssize, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = mysqli_prepare($abc, $query);
 
 
     //Bind statement with outputs from form
-    mysqli_stmt_bind_param($stmt, "ssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtsize, $shirtcolor, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber);
+    mysqli_stmt_bind_param($stmt, "sssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtstyle, $shirtsize, $shirtcolor, $shortssize, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber);
     
     mysqli_stmt_execute($stmt);
 
