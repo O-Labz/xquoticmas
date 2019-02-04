@@ -90,7 +90,7 @@
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Shirt</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#tshirtModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="4000.00 JMD" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="4000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -102,7 +102,7 @@
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Costume</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic3.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic3.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -118,7 +118,7 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic4.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic4.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -134,7 +134,7 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/gallery/pic5.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/gallery/pic5.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -152,7 +152,7 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Xquotic Metal Phone Ring</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic6.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic6.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -170,12 +170,12 @@
 				<li>Xquotic Metal Phone Ring</li>
 				<li>Mardi Gras</li>
 				<br>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/gallery/pic7.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/gallery/pic7.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 
 
-<!-- Modal -->
+<!-- Drinks Modal -->
 <div class="modal fade" id="drinksModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -573,6 +573,361 @@
   </div>
 </div>
 
+<!-- Custom Modal -->
+<div class="modal fade" id="buildModal" tabindex="-1" role="dialog" aria-labelledby="buildModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="buildModal">Product title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	  <div class="container-fluid">
+		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="pics" name="pics" src="" alt="Card image cap"></div>
+		    <div class="row">
+		      <div class="col-md-7 ml-auto" style="margin: 1px 3px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
+		    </div>
+			<div class="container my-container">
+			  <form action="drinksonly.php" method="POST" enctype="multipart/form-data">
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <input type="text" class="form-control" placeholder="First name" id="firstname" name="firstname" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <input type="text" class="form-control" placeholder="Last name" id="lastname" name="lastname" required>
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputAddress"></label>
+			      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+			    </div>
+			    <div class="form-group">
+			      <label for="inputAddress2"></label>
+			      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
+			    </div>
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <label for="inputCity"></label>
+			        <input type="text" class="form-control" placeholder="Nationality" id="nationality" name="nationality" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <label for="inputState"></label>
+			        <select id="inputState" class="form-control" id="gender" name="gender" required>
+			          <option value="" disabled selected>Gender...</option>
+			          <option>Male</option>
+			          <option>Female</option>
+			        </select>
+			      </div>
+			    </div>
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <input type="number" class="form-control" id="age" name="age"  min="18" max="75" placeholder="Age" required>
+			      </div>
+			      <div class="form-group col-md-6">
+			        <label for="inputZip"></label>
+			        <input type="number" class="form-control" id="quantity" name="quantity"  min="1" max="25" value="1" placeholder="Package Quantity" hidden="true">
+			      </div>
+			    </div>
+			    <hr>
+				<label for="inputState">Select anything you want :</label>
+
+					<div class="form-row">
+					      <div class="form-group col-md-12">
+					        <input type="checkbox" name="mug" id="" value="mug"> Mug ($300)</input>
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="checkbox" name="mason jar" id="mason jar" value="mason jar"> Mason Jar ($800)</input>
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="checkbox" name="tote bag" id="tote bag" value="tote bag"> Tote Bag (pre-selected) ($500)</input>
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="checkbox" name="wave rag" id="wave rag" value="wave rag"> Wave Rag ($400)</input>
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="checkbox" name="waterproof phone case" id="waterproof phone case" value="waterproof phone case"> Waterproof Phone Case ($400)</input>
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="checkbox" name="metal phone ring" id="metal phone ring" value="metal phone ring"> Metal Phone Ring ($500)</input>
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="checkbox" name="mardi gras" id="mardi gras" value="mardi gras"> Mardi Gras ($100)</input>
+					      </div>
+
+					      <div class="form-group col-md-12">
+					        <label for="inputZip"></label>
+					        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+					          <option value="" disabled selected>J’Ouvert ($500) T-Shirt Size (all shirts come in white)</option>
+					          <option>XS</option>
+					          <option>S</option>
+					          <option>M</option>
+					          <option>L</option>
+					          <option>XL</option>
+					          <option>XXL</option>
+					        </select>
+					      </div>
+
+					      <div class="form-group col-md-12">
+					        <label for="inputZip"></label>
+					        <select id="inputState" class="form-control" id="shorts" name="shorts" >
+					          <option value="" disabled selected>Shorts ($2000)</option>
+					          <option>S</option>
+					          <option>M</option>
+					          <option>L</option>
+					          <option>XL</option>
+					        </select>
+					      </div>
+					    </div>
+					</div>
+
+			    <hr>
+			    <label for="inputState">Select a Package</label>
+			    <div class="form-row">
+			      <div class="form-group col-md-6">
+			        <input type="radio" id="package"  name="package" value="tshirtanddrinks"> T-Shirt ($1000)
+			      </div>
+			      	<div id="tshirtanddrinkstextboxes">
+				     <div class="form-row">
+				      <div class="form-group col-md-12">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
+				          <option value="" disabled selected>T-Shirt Style</option>
+				          <option>Tank Top</option>
+				          <option>T-Shirt</option>
+				          <option>Tube Top</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
+				          <option value="" disabled selected>Shirt Size...</option>
+				          <option>XS</option>
+				          <option>S</option>
+				          <option>M</option>
+				          <option>L</option>
+				          <option>XL</option>
+				          <option>XXL</option>
+				        </select>
+				      </div>
+				      <div class="form-group col-md-6">
+				        <label for="inputZip"></label>
+				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
+				          <option value="" disabled selected>Shirt Colour...</option>
+				          <option>Black</option>
+				          <option>White</option>
+				        </select>
+				      </div>
+				    </div>
+				</div>
+			    </div>
+			    <hr>
+
+				<div id="costumeandrinkstextboxes" style="display: none">
+				    <div class="form-row">
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline ($4500)
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicandrosback"> Andros Backline ($4500)
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline ($4500)
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadiseback"> Paradise Backline ($4500)
+				      </div>
+				      <div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma ($5500)
+				      </div>
+				    </div>
+				</div>
+
+			    <div id="basiccostumepackagetextboxes"> 
+				</div>
+				<hr>
+			      	  <div class="form-group col-md-12">
+				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline or Backline($4500)
+				      </div>
+					<div id="basicandrostextboxes>
+						<div class="form-row">
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+						      </div>
+					    </div>
+					</div>
+					<hr>
+						<div class="form-group col-md-12">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline or Backline ($4500)
+				      </div>
+					<div id="basicparadisetextboxes">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Navel to Crotch" id="navel" name="navel" >
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Shoulder to Underbust" id="shoulder" name="shoulder" >
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Width between each Breast" id="breast" name="breast" >
+					      </div>
+					    </div>
+					</div>
+					<hr>
+						<div class="form-group col-md-6">
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma ($5500)
+				      </div>
+					<div id="basicexumatextboxes">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bra Size" id="bra" name="bra" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Panty Size" id="panty" name="panty" >
+					      </div>
+					    </div>
+					</div>
+
+
+
+
+			    <div id="premiumcostumepackagetextboxes" style="display: none"> 
+				</div>
+					<div id="premiumandrostextboxes" style="display: none">
+						<div class="form-row">
+							<div class="form-group col-md-12">
+						        <label for="inputZip"></label>
+						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+						          <option>XS</option>
+						          <option>S</option>
+						          <option>M</option>
+						          <option>L</option>
+						          <option>XL</option>
+						          <option>XXL</option>
+						        </select>
+						     </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+						      </div>
+					    </div>
+					</div>
+					<div id="premiumparadisetextboxes" style="display: none">
+					<div class="form-row">
+						<div class="form-group col-md-12">
+						        <label for="inputZip"></label>
+						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+						          <option>XS</option>
+						          <option>S</option>
+						          <option>M</option>
+						          <option>L</option>
+						          <option>XL</option>
+						          <option>XXL</option>
+						        </select>
+						  </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Navel to Crotch" id="navel" name="navel" >
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Shoulder to Underbust" id="shoulder" name="shoulder" >
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Width between each Breast" id="breast" name="breast" >
+					      </div>
+					    </div>
+					</div>
+					<div id="premiumexumatextboxes" style="display: none">
+					<div class="form-row">
+						<div class="form-group col-md-12">
+					        <label for="inputZip"></label>
+					        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
+					          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
+					          <option>XS</option>
+					          <option>S</option>
+					          <option>M</option>
+					          <option>L</option>
+					          <option>XL</option>
+					          <option>XXL</option>
+					        </select>
+					     </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bra Size" id="bra" name="bra" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Panty Size" id="panty" name="panty" >
+					      </div>
+					    </div>
+					</div>
+				<hr>
+			    <label for="inputState">Choose Payment Method: </label>
+			    <br>
+			    <input type="radio" id="paymenttype" name="paymenttype" value="bank" required> Bank Transfer
+			    <br>
+				<input type="radio" id="paymenttype" name="paymenttype" value="paypal"> Paypal
+				<hr>
+			    <label for="inputState"></label>
+			    <div class="form-group">
+			      <div class="form-check">
+			        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+			        <label class="form-check-label" for="gridCheck">
+			          I agree that all information entered here about me is true and correct.
+			        </label>
+			      </div>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="submit" class="btn btn-primary">Register</button>
+			    </div>
+			  </form>
+			</div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <br>
 <br>
 <br>
@@ -588,19 +943,29 @@
 <!-- Change modal contents with jquery -->
 <script type="text/javascript">
 	$('#drinksModal').on('show.bs.modal', function (event) {
-	  var button = $(event.relatedTarget)
-	  var recipienttitle = button.data('title')
-	  var recipientpicture = button.data('picture')
-	  var recipientprice = button.data('ordertotal')
-	  var modal = $(this)
-	  modal.find('.modal-title').text(recipienttitle)
-	  modal.find('.modal-body #pic').val(recipientpicture)
-	  modal.find('.modal-body #ordertotal').val(recipientprice)
+	  var button = $(event.relatedTarget);
+	  var recipienttitle = button.data('title');
+	  var recipientpicture = button.data('picture');
+	  var recipientprice = button.data('ordertotal');
+	  var modal = $(this);
+	  modal.find('.modal-title').text(recipienttitle);
+	  modal.find('.modal-body #pic').val(recipientpicture);
+	  modal.find('.modal-body #ordertotal').val(recipientprice);
 	  //Now change immage src using jquery
 	  $('#pic').attr('src',recipientpicture)
-	  $.post('registeruser.php', 'ordertotal=' + $(this).val(recipientprice), function (response) {
-      alert(response);});
-	})
+	});
+	$('#buildModal').on('show.bs.modal', function (event) {
+	  var button = $(event.relatedTarget);
+	  var buildrecipienttitle = button.data('title');
+	  var buildrecipientpicture = button.data('picture');
+	  var buildrecipientprice = button.data('ordertotal');
+	  var modal = $(this);
+	  modal.find('.modal-title').text(buildrecipienttitle);
+	  modal.find('.modal-body #pics').val(buildrecipientpicture);
+	  modal.find('.modal-body #ordertotal').val(buildrecipientprice);
+	  //Now change immage src using jquery
+	  $('#pics').attr('src',buildrecipientpicture)
+	});
 </script>
 
 <!-- Change package options -->
