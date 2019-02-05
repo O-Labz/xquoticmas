@@ -45,10 +45,17 @@
 
   <body>
   	<div class="con" style=" text-align: center; right: 0; left: 0; position: absolute;">
-		<div class="w3-content w3-section" style="width:100%; height: 100%;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic1.jpg" style="width:100%;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic2.jpg" style="width:100%">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic4.jpg" style="width:100%">
+		<div class="w3-content w3-section" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic1.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic2.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic3.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic4.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic5.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic6.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic7.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic8.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic9.jpg" style="width:100%; height: 20%;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic10.jpg" style="width:100%; height: 20%;">
 		</div>
 	</div>
     
