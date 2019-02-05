@@ -1,7 +1,37 @@
+<?php
+   // include("config.php");
+   // session_start();
+   
+   // if($_SERVER["REQUEST_METHOD"] == "POST") {
+   //    // username and password sent from form 
+      
+   //    $myusername = mysqli_real_escape_string($db,$_POST['username']);
+   //    $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+   //    $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+   //    $result = mysqli_query($db,$sql);
+   //    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+   //    $active = $row['active'];
+      
+   //    $count = mysqli_num_rows($result);
+      
+   //    // If result matched $myusername and $mypassword, table row must be 1 row
+		
+   //    if($count == 1) {
+   //       session_register("myusername");
+   //       $_SESSION['login_user'] = $myusername;
+         
+   //       header("location: welcome.php");
+   //    }else {
+   //       $error = "Your Login Name or Password is invalid";
+   //    }
+   // }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Xquatic Mas: Welcome</title>
+   <title>Xquatic: Admin</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->   
@@ -24,14 +54,6 @@
    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
 <!--===============================================================================================-->
-    <!-- Bootstrap CSS -->
-    <link href="./stylesheet/css/bootstrap-grid.css" rel="stylesheet">
-    <link href="./stylesheet/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="./stylesheet/css/bootstrap-reboot.css" rel="stylesheet">
-    <link href="./stylesheet/css/bootstrap-reboot.min.css" rel="stylesheet">
-    <link href="./stylesheet/css/bootstrap.css" rel="stylesheet">
-    <link href="./stylesheet/css/bootstrap.min.css" rel="stylesheet">
-<!--===============================================================================================-->
    <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -45,102 +67,50 @@
    <link rel="stylesheet" type="text/css" href="./stylesheet/css/util.css">
    <link rel="stylesheet" type="text/css" href="./stylesheet/css/main.css">
 <!--===============================================================================================-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-     <script type="text/javascript">
-        $(document).ready(function () {
-            var nowY = new Date().getFullYear(),options = "";
-
-         for(var Y=nowY; Y>=1968; Y--) {
-           options += "<option>"+ Y +"</option>";
-         }
-
-         $("#year").append( options );
-      });
-    </script>
-<!--===============================================================================================-->
 </head>
-<body> 
+<body>
+   
    <div class="limiter">
       <div class="container-login100">
          <div class="wrap-login100">
             <div class="login100-pic js-tilt" data-tilt>
-               <img src="./assets/MasLogo.png" alt="IMG">
+               <img src="./assets/Mas.png" alt="IMG">
             </div>
 
-            <form action="./src/pages/bday.php" method="POST" class="login100-form validate-form" enctype="multipart/form-data">
+            <form action = "" method = "post" class="login100-form validate-form">
                <span class="login100-form-title">
-                  Are you of legal age to party with Xquotic ?
+                  Xquatic Admin Login
                </span>
 
-               <div class="wrap-input100 validate-input">
-                 <select class="input100" id="year" name="year" required>
-                   <option value="" disabled selected>Year</option>
-                 </select>
+               <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                  <input class="input100" type="text" name="username" placeholder="User Name">
+                  <span class="focus-input100"></span>
+                  <span class="symbol-input100">
+                     <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
                </div>
-
-               <div class="wrap-input100 validate-input">
-                  <select class="input100" id="month" name="month" required>
-                     <option value="" disabled selected>Month</option>
-                     <option value='1'>Janaury</option>
-                     <option value='2'>February</option>
-                     <option value='3'>March</option>
-                     <option value='4'>April</option>
-                     <option value='5'>May</option>
-                     <option value='6'>June</option>
-                     <option value='7'>July</option>
-                     <option value='8'>August</option>
-                     <option value='9'>September</option>
-                     <option value='10'>October</option>
-                     <option value='11'>November</option>
-                     <option value='12'>December</option>
-                  </select> 
-               </div>
-
 
                <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                 <select class="input100" id="day" name="day" required>
-                     <option value="" disabled selected>Day</option>
-                     <option value='1'>1</option>
-                     <option value='2'>2</option>
-                     <option value='3'>3</option>
-                     <option value='4'>4</option>
-                     <option value='5'>5</option>
-                     <option value='6'>6</option>
-                     <option value='7'>7</option>
-                     <option value='8'>8</option>
-                     <option value='9'>9</option>
-                     <option value='10'>10</option>
-                     <option value='11'>11</option>
-                     <option value='12'>12</option>
-                     <option value='13'>13</option>
-                     <option value='14'>14</option>
-                     <option value='15'>15</option>
-                     <option value='16'>16</option>
-                     <option value='17'>17</option>
-                     <option value='18'>18</option>
-                     <option value='19'>19</option>
-                     <option value='20'>20</option>
-                     <option value='21'>21</option>
-                     <option value='22'>22</option>
-                     <option value='23'>23</option>
-                     <option value='24'>24</option>
-                     <option value='25'>25</option>
-                     <option value='26'>26</option>
-                     <option value='27'>27</option>
-                     <option value='28'>28</option>
-                     <option value='29'>29</option>
-                     <option value='30'>30</option>
-                     <option value='31'>31</option>
-                 </select>
+                  <input class="input100" type="password" name="password" placeholder="Password">
+                  <span class="focus-input100"></span>
+                  <span class="symbol-input100">
+                     <i class="fa fa-lock" aria-hidden="true"></i>
+                  </span>
                </div>
                
                <div class="container-login100-form-btn">
-                  <button type="submit" class="btn btn-outline-info" style="width: 300px;">Enter</button>
+                  <button type = "submit" value = " Submit " class="login100-form-btn">
+                     Login
+                  </button>
                </div>
             </form>
          </div>
       </div>
    </div>
+   
+   
+
+   
 <!--===============================================================================================-->   
    <script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
