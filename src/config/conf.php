@@ -16,7 +16,7 @@
 	DEFINE('REGISTER_LINK', 'Location: http://localhost:1234/Xquoticmas/src/pages/index.php?page=registrationdone');
 	DEFINE('ADMIN_LINK', 'Location: http://localhost:1234/Xquoticmas/index.php');
 
-	DEFINE('WELCOME_LINK','http://localhost:1234/Xquoticmas/welcome.php');
+	DEFINE('WELCOME_LINK','http://localhost:1234/Xquoticmas/customorder.php');
 	DEFINE('REG_LINK','http://localhost:1234/Xquoticmas/registered.php');
 	DEFINE('COMMENTS_LINK','http://localhost:1234/Xquoticmas/Comments.php');
 	DEFINE('DRINKS_LINK','http://localhost:1234/Xquoticmas/drinks.php');

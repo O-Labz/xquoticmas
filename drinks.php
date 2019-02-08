@@ -123,7 +123,7 @@
 	<div class="container">
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-		<option value="<?php echo($Welcome_link); ?>">Welcome</option>
+		<option value="<?php echo($Welcome_link); ?>">Custom Orders</option>
 		<option value="<?php echo($reg_link); ?>">Registered Customers</option>
 		<option value="<?php echo($comments_link); ?>">Comments</option>
 		<option value="<?php echo($drinks_link); ?>"selected>Drinks only Orders</option>
@@ -132,13 +132,11 @@
 		<option value="<?php echo($basicd_link); ?>">Basic T-Shirt Package</option>
 		<option value="<?php echo($basicc_link); ?>">Basic Costume Package</option>
 		<option value="<?php echo($premiums_link); ?>">Premium T-Shirt Package</option>
-		<option value="<?php echo($costumed_link); ?>">Costume and Drinks Orders</option>
 		<option value="<?php echo($premiumc_link); ?>">Premium Costume Package</option>
-		<option value="<?php echo($costomo_link); ?>">Custom Orders</option>
 	</select>
 	<br>
 	<br>
-	  <h2>Customers Table</h2>
+	  <h2>Drinks Only Table</h2>
 	  <table class="table table-bordered table-sm table-striped table-hover" style="overflow-y: auto;">
 	    <thead class="thead-inverse">
 	      <tr>

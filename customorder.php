@@ -108,7 +108,7 @@
 		require_once('./src/config/conf.php');
 
 		//Get data from market view table
-		$query = "SELECT `firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age` FROM `orders`";
+		$query = "SELECT * FROM `orders`";
 
 
 		// Get a response from the database by sending the connection
@@ -121,10 +121,11 @@
 
 
 	<div class="container">
+	<label for="clist">Custom Orders Table:</label>
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-		<option value="<?php echo($Welcome_link); ?>">Custom Orders</option>
-		<option value="<?php echo($reg_link); ?>"selected>Registered Customers</option>
+		<option value="<?php echo($welcome_link); ?>"selected >Custom Orders</option>
+		<option value="<?php echo($reg_link); ?>">Registered Customers</option>
 		<option value="<?php echo($comments_link); ?>">Comments</option>
 		<option value="<?php echo($drinks_link); ?>">Drinks only Orders</option>
 		<option value="<?php echo($tshirt_link); ?>">T-Shirt and Drinks</option>
@@ -136,7 +137,7 @@
 	</select>
 	<br>
 	<br>
-	  <h2>Registered Customers Table</h2>
+	  <h2>Orders Table</h2>
 	  <table class="table table-bordered table-sm table-striped table-hover" style="overflow-y: auto;">
 	    <thead class="thead-inverse">
 	      <tr>
@@ -147,6 +148,36 @@
 			<th>Nationality</th>
 			<th>Gender</th>
 			<th>Age</th>
+			<th>Quantity</th>
+			<th>Package</th>
+			<th>Subpackage</th>
+			<th>Payment Type</th>
+			<th>Mug</th>
+			<th>Mason Jar</th>
+			<th>Tote Bag</th>
+			<th>Wave Wrag</th>
+			<th>Phone Case</th>
+			<th>Metal Phone Ring</th>
+			<th>Mardi Gras</th>
+			<th>Jouvert</th>
+			<th>Shirtstyle</th>
+			<th>Shirtsize</th>
+			<th>Shirtcolor</th>
+			<th>Shortssize</th>
+			<th>Costumename</th>
+			<th>Bust</th>
+			<th>Waist</th>
+			<th>Hip</th>
+			<th>Neck</th>
+			<th>Navel</th>
+			<th>Shoulder</th>
+			<th>Breast</th>
+			<th>Bra</th>
+			<th>Panty</th>
+			<th>Order Total</th>
+			<th>Order Status</th>
+			<th>Payment Status</th>
+			<th>Invoice Number</th>
 	      </tr>
 	    </thead>
 	    <tbody>
@@ -159,7 +190,37 @@
 			    <td><?php echo $row['phone'];?></td>
 			    <td><?php echo $row['nationality'];?></td> 
 				<td><?php echo $row['gender'];?></td>
-				<td><?php echo $row['age'];?></td>            
+				<td><?php echo $row['age'];?></td>
+				<td><?php echo $row['quantity'];?></td>
+				<td><?php echo $row['package'];?></td>
+				<td><?php echo $row['subpackage'];?></td> 
+				<td><?php echo $row['paymenttype'];?></td>
+				<td><?php echo $row['mug'];?></td>
+				<td><?php echo $row['jar'];?></td>
+				<td><?php echo $row['tote'];?></td>
+				<td><?php echo $row['wrag'];?></td>
+				<td><?php echo $row['phonecase'];?></td>
+				<td><?php echo $row['ring'];?></td>
+				<td><?php echo $row['mardi'];?></td>
+				<td><?php echo $row['jouvert'];?></td>
+				<td><?php echo $row['shirtstyle'];?></td>
+				<td><?php echo $row['shirtsize'];?></td>
+				<td><?php echo $row['shirtcolor'];?></td> 
+				<td><?php echo $row['shortssize'];?></td>
+				<td><?php echo $row['costumename'];?></td>
+				<td><?php echo $row['bust'];?></td>
+				<td><?php echo $row['waist'];?></td>
+				<td><?php echo $row['hip'];?></td> 
+				<td><?php echo $row['neck'];?></td>
+				<td><?php echo $row['navel'];?></td>
+				<td><?php echo $row['shoulder'];?></td>
+				<td><?php echo $row['breast'];?></td>
+				<td><?php echo $row['bra'];?></td> 
+				<td><?php echo $row['panty'];?></td>
+				<td><?php echo $row['ordertotal'];?></td>
+				<td><?php echo $row['orderstatus'];?></td>
+				<td><?php echo $row['paymentstatus'];?></td>
+				<td><?php echo $row['invoicenumber'];?></td>               
 			</tr>
 			<?php endwhile ;?>
 

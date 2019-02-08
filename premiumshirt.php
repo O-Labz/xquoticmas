@@ -67,7 +67,7 @@
 		    object-fit: fill;
 		}
 		.container{
-		  width: 90%;
+		  width: 100%;
 		  position: relative;
 /*		  left: 0;
 		  right: 0;*/
@@ -108,7 +108,7 @@
 		require_once('./src/config/conf.php');
 
 		//Get data from market view table
-		$query = "SELECT * FROM `orders`";
+		$query = "SELECT `firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age`,`quantity`,`package`,`jouvert`,`shirtstyle`,`shirtsize`,`shortssize`,`shirtcolor`,`ordertotal`,`orderstatus`,`paymenttype`,`paymentstatus`,`invoicenumber` FROM `orders` WHERE `package` = 'premiumtshirt'";
 
 
 		// Get a response from the database by sending the connection
@@ -121,10 +121,9 @@
 
 
 	<div class="container">
-	<label for="clist"">Select The Table You want to Edit List:</label>
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-		<option value="<?php echo($Welcome_link); ?>" selected>Welcome</option>
+		<option value="<?php echo($Welcome_link); ?>">Custom Orders</option>
 		<option value="<?php echo($reg_link); ?>">Registered Customers</option>
 		<option value="<?php echo($comments_link); ?>">Comments</option>
 		<option value="<?php echo($drinks_link); ?>">Drinks only Orders</option>
@@ -132,14 +131,12 @@
 		<option value="<?php echo($costume_link); ?>">Costume and Drinks Orders</option>
 		<option value="<?php echo($basicd_link); ?>">Basic T-Shirt Package</option>
 		<option value="<?php echo($basicc_link); ?>">Basic Costume Package</option>
-		<option value="<?php echo($premiums_link); ?>">Premium T-Shirt Package</option>
-		<option value="<?php echo($costumed_link); ?>">Costume and Drinks Orders</option>
+		<option value="<?php echo($premiums_link); ?>"selected>Premium T-Shirt Package</option>
 		<option value="<?php echo($premiumc_link); ?>">Premium Costume Package</option>
-		<option value="<?php echo($costomo_link); ?>">Custom Orders</option>
 	</select>
 	<br>
 	<br>
-	  <h2>Orders Table</h2>
+	  <h2>Premium Shirt Table</h2>
 	  <table class="table table-bordered table-sm table-striped table-hover" style="overflow-y: auto;">
 	    <thead class="thead-inverse">
 	      <tr>
@@ -152,25 +149,14 @@
 			<th>Age</th>
 			<th>Quantity</th>
 			<th>Package</th>
-			<th>Subpackage</th>
-			<th>Payment Type</th>
 			<th>Jouvert</th>
-			<th>Shirtstyle</th>
-			<th>Shirtsize</th>
-			<th>Shirtcolor</th>
-			<th>Shortssize</th>
-			<th>Costumename</th>
-			<th>Bust</th>
-			<th>Waist</th>
-			<th>Hip</th>
-			<th>Neck</th>
-			<th>Navel</th>
-			<th>Shoulder</th>
-			<th>Breast</th>
-			<th>Bra</th>
-			<th>Panty</th>
+			<th>Shirt Style</th>
+			<th>Shirt Size</th>
+			<th>Shorts Size</th>
+			<th>Shirt Colour</th>
 			<th>Order Total</th>
 			<th>Order Status</th>
+			<th>Payment Type</th>
 			<th>Payment Status</th>
 			<th>Invoice Number</th>
 	      </tr>
@@ -185,30 +171,19 @@
 			    <td><?php echo $row['phone'];?></td>
 			    <td><?php echo $row['nationality'];?></td> 
 				<td><?php echo $row['gender'];?></td>
-				<td><?php echo $row['age'];?></td>
+				<td><?php echo $row['age'];?></td>   
 				<td><?php echo $row['quantity'];?></td>
 				<td><?php echo $row['package'];?></td>
-				<td><?php echo $row['subpackage'];?></td> 
-				<td><?php echo $row['paymenttype'];?></td>
 				<td><?php echo $row['jouvert'];?></td>
 				<td><?php echo $row['shirtstyle'];?></td>
 				<td><?php echo $row['shirtsize'];?></td>
+				<td><?php echo $row['shortssize'];?></td>
 				<td><?php echo $row['shirtcolor'];?></td> 
-				<td><?php echo $row['shirtsize'];?></td>
-				<td><?php echo $row['costumename'];?></td>
-				<td><?php echo $row['bust'];?></td>
-				<td><?php echo $row['waist'];?></td>
-				<td><?php echo $row['hip'];?></td> 
-				<td><?php echo $row['neck'];?></td>
-				<td><?php echo $row['navel'];?></td>
-				<td><?php echo $row['shoulder'];?></td>
-				<td><?php echo $row['breast'];?></td>
-				<td><?php echo $row['bra'];?></td> 
-				<td><?php echo $row['panty'];?></td>
 				<td><?php echo $row['ordertotal'];?></td>
 				<td><?php echo $row['orderstatus'];?></td>
+				<td><?php echo $row['paymenttype'];?></td>
 				<td><?php echo $row['paymentstatus'];?></td>
-				<td><?php echo $row['invoicenumber'];?></td>               
+				<td><?php echo $row['invoicenumber'];?></td>            
 			</tr>
 			<?php endwhile ;?>
 
