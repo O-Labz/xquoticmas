@@ -41,22 +41,6 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
-    <div class="con">
-		<div class="img-fluid">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic1.jpg" style="width: 100%; height: 1080px; ">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic12.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic11.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic4.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic5.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic6.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic7.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic8.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic9.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic10.jpg"style="width: 100%; height: 1080px;">
-		</div>
-	</div>
-
   </head>
 
   <body>
@@ -68,11 +52,11 @@
 			font-size: 1.9em;
 			font-family: Baskerville;
 			font-weight: bold;
-			color: #ffffff;
+			color: #620365;
 		}
 		a:hover{
 		    transform: scale(1.1);
-		    color: #ffffff;
+		    color: #3e0444;
 		}
 		.con {
 		    position:fixed;
@@ -81,6 +65,17 @@
 		    left:0;
 		    right:0;
 		    object-fit: fill;
+		}
+		.container{
+		  width: 90%;
+		  position: relative;
+/*		  left: 0;
+		  right: 0;*/
+		  margin-top: 15%;
+		}
+		th{
+			background-color: #620365;
+			color: #ffffff;
 		}
 	</style>
 
@@ -107,20 +102,99 @@
 			</div>
 		</div>
 	</header>
-	
-<script>
-	var myIndex = 0;
-	carousel();
 
-	function carousel() {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";  
-	  }
-	  myIndex++;
-	  if (myIndex > x.length) {myIndex = 1}    
-	  x[myIndex-1].style.display = "block";  
-	  setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-</script>
+	<?php
+		// Get a connection for the database
+		require_once('./src/config/conf.php');
+
+		//Get data from market view table
+		$query = "SELECT `firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age` FROM `orders`";
+
+
+		// Get a response from the database by sending the connection
+		// and the query
+		$response = @mysqli_query($abc, $query);
+	?>
+
+
+
+
+
+	<div class="container">
+	<br>
+	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+		<option value="<?php echo($Welcome_link); ?>">Welcome</option>
+		<option value="<?php echo($reg_link); ?>"selected>Registered Customers</option>
+		<option value="<?php echo($comments_link); ?>">Comments</option>
+		<option value="<?php echo($drinks_link); ?>">Drinks only Orders</option>
+		<option value="<?php echo($tshirt_link); ?>">T-Shirt and Drinks</option>
+		<option value="<?php echo($costume_link); ?>">Costume and Drinks Orders</option>
+		<option value="<?php echo($basicd_link); ?>">Basic T-Shirt Package</option>
+		<option value="<?php echo($basicc_link); ?>">Basic Costume Package</option>
+		<option value="<?php echo($premiums_link); ?>">Premium T-Shirt Package</option>
+		<option value="<?php echo($costumed_link); ?>">Costume and Drinks Orders</option>
+		<option value="<?php echo($premiumc_link); ?>">Premium Costume Package</option>
+		<option value="<?php echo($costomo_link); ?>">Custom Orders</option>
+	</select>
+	<br>
+	<br>
+	  <h2>Customers Table</h2>
+	  <table class="table table-bordered table-sm table-striped table-hover" style="overflow-y: auto;">
+	    <thead class="thead-inverse">
+	      <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Nationality</th>
+			<th>Gender</th>
+			<th>Age</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+
+			<?php while($row = mysqli_fetch_array($response)):?>
+			<tr>
+			    <td><?php echo $row['firstname'];?></td>
+			    <td><?php echo $row['lastname'];?></td>
+			    <td><?php echo $row['email'];?></td>
+			    <td><?php echo $row['phone'];?></td>
+			    <td><?php echo $row['nationality'];?></td> 
+				<td><?php echo $row['gender'];?></td>
+				<td><?php echo $row['age'];?></td>            
+			</tr>
+			<?php endwhile ;?>
+
+	    </tbody>
+	  </table>
+	</div>
+
+	<?php mysqli_close($abc); ?>
+	<br>
+	<br>
+  </body>
+	<div class="container-fluid fixed-bottom" style="background-color: #efefef; width: 100%; position: fixed; opacity: .9;">
+		<div class="row justify-content-md-center">
+			    <div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+					<a href="#">
+					  	<img src="/Xquoticmas/assets/social/fb.png" alt="facebook" style="width:30px;height:30px;border:0; margin: 2px 5px; position:relative;">
+					  </a>
+				      <a href="#">
+					  	<img src="/Xquoticmas/assets/social/insta.png" alt="instagram" style="width:30px;height:30px;border:0; margin: 2px 5px; position:relative;">
+					  </a>
+				    <strong>Be Exquisite; Live Exotic…</strong>
+				    <a href="#">
+				  	<img src="/Xquoticmas/assets/social/twitter.png" alt="twitter" style="width:30px;height:30px;border:0; margin: 2px 5px; position:relative;">
+				  </a>
+			      <a href="#">
+				  	<img src="/Xquoticmas/assets/social/snap.png" alt="snapchat" style="width:30px;height:30px;border:0; margin: 2px 5px; position:relative;">
+				  </a>
+				</div>
+			    <div class="col-sm-4">
+		    	</div>
+			</div>
+		</div>
+	</div>
+</html>
