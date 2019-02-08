@@ -67,6 +67,7 @@
 	    		<h5 class="card-title">Package Contents</h5>
 	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
 	    		<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/gallery/pic8.jpg" data-ordertotal="2000.00 JMD" >Customize Now</button>
 	  		</div>
 		</div>
@@ -78,6 +79,9 @@
 				<li>Xquotic Mug</li>
 				<li>Premium Mixed Drinks</li>
 				<br>
+				<br>
+				<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/gallery/pic1.jpg" data-ordertotal="2000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
@@ -90,6 +94,8 @@
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Shirt</li>
 				<br>
+				<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="4000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
@@ -102,6 +108,7 @@
 				<li>Premium Mixed Drinks</li>
 				<li>Xquotic Costume</li>
 				<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic3.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
@@ -118,6 +125,8 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
+				<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic4.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
@@ -134,6 +143,8 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Mardi Gras</li>
 				<br>
+				<br>
+	    		<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/gallery/pic5.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
@@ -151,7 +162,7 @@
 				<li>Xquotic Wave Rag</li>
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Xquotic Metal Phone Ring</li>
-				<br>
+				<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic6.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
@@ -169,7 +180,7 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Xquotic Metal Phone Ring</li>
 				<li>Mardi Gras</li>
-				<br>
+				<hr>
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/gallery/pic7.jpg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
