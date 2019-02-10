@@ -40,9 +40,47 @@ function sendEmail($toAddress)
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail->Subject = 'UWI Carnival Package Order';
+            $mail->Body    = '<img src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 25%; position: fixed; right: 0; left: 0; top: 0;">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <div style="position: relative; right: 0; left: 0; top: 0; bottom: 0; ">
+                <p style="font-size:160%;">Hi {$firstname} ,</p>
+                <br>
+                Thank you for choosing Xquotic Mas ! If you have any questions with regard to your order please visit our website and contact us as soon as possible.
+                <br>
+                <br>
+                In the event that we need to reach you we will contact you using the number below.
+                <h1 style="font-size:300%;">Invoice</h1>
+                <p style="font-size:160%;">Name on Order:</p>
+                <p style="font-size:160%;">Call back Number:</p>
+                <br>
+                <h1>Order Details</h1>
+                <p style="font-size:160%;">Order #: </p>
+                <p style="font-size:160%;">Date: </p>
+                <hr>
+                <b style="margin-right: 100px;">Amount</b><span style="margin: 50px 100px;"><b>Purchase Description</b></span><b style="margin: 50px 100px;">Amount</b>
+                <br>
+                <br>
+                <b style="margin-right: 100px;">Amount</b><span style="margin: 50px 100px;"><b>Purchase Description</b></span><b style="margin: 50px 100px;">Amount</b>
+                <hr>';
 
             $mail->send();
             echo 'Email Message has been sent';
