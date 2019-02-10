@@ -226,7 +226,7 @@
                 <p style="font-size:160%;">Call back Number: <?php echo $phone; ?></p>
                 <br>
                 <h1>Order Details</h1>
-                <p style="font-size:160%;">Order #: <?php echo $invoicenumber; ?></p>
+                <p style="font-size:160%;">Order : <?php echo $invoicenumber; ?></p>
                 <p style="font-size:160%;">Date: <?php echo $dte; ?></p>
                 <hr>
                 <b style="margin-right: 100px;">Quantity</b><span style="margin: 100px;"><b>Purchase Description</b></span><b style="margin: 100px;">Amount</b>
