@@ -20,8 +20,8 @@ function sendEmail($toAddress)
             // $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             // $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'omri.hopson@gmail.com';                 // SMTP username
-            $mail->Password = 'alshika54';                           // SMTP password
+            $mail->Username = 'xquoticmas@gmail.com';                 // SMTP username
+            $mail->Password = 'xquoticband';                           // SMTP password
             $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 465; //587 for tls                                  // TCP port to connect to
 

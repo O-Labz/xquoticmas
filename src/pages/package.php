@@ -647,26 +647,26 @@
 
 					<div class="form-row">
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="mug" id="" value="mug"> Mug ($300)</input>
+					        <input type="checkbox" name="mug" id="mug" value="mug"> Mug ($300)</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="mason jar" id="mason jar" value="mason jar"> Mason Jar ($800)</input>
+					        <input type="checkbox" name="jar" id="jar" value="jar"> Mason Jar ($800)</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="tote bag" id="tote bag" value="tote bag"> Tote Bag (pre-selected) ($500)</input>
+					        <input type="checkbox" name="tote" id="tote" value="tote"> Tote Bag (pre-selected) ($500)</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="wave rag" id="wave rag" value="wave rag"> Wave Rag ($400)</input>
+					        <input type="checkbox" name="wrag" id="wrag" value="wrag"> Wave Rag ($400)</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="waterproof phone case" id="waterproof phone case" value="waterproof phone case"> Waterproof Phone Case ($400)</input>
+					        <input type="checkbox" name="phonecase" id="phonecase" value="phonecase"> Waterproof Phone Case ($400)</input>
 					      </div>
 					      <br>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="metal phone ring" id="metal phone ring" value="metal phone ring"> Metal Phone Ring ($500)</input>
+					        <input type="checkbox" name="ring" id="ring" value="ring"> Metal Phone Ring ($500)</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="mardi gras" id="mardi gras" value="mardi gras"> Mardi Gras ($100)</input>
+					        <input type="checkbox" name="mardi" id="mardi" value="mardi"> Mardi Gras ($100)</input>
 					      </div>
 
 					      <div class="form-group col-md-12">

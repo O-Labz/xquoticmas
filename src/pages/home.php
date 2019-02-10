@@ -44,16 +44,22 @@
 
     <div class="con">
 		<div class="img-fluid">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic1.jpg" style="width: 100%; height: 1080px; ">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic12.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic11.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic4.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic5.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic6.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic7.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic8.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic9.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic10.jpg"style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic22.jpg" style="width: 100%; height: 1080px; ">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic28.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic23.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic4.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic5.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic6.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic7.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic8.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic9.jpg" style="width: 100%; height: 1100px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic10.jpg"style="width: 100%; height: 1100px;">
+
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic24.jpg" style="width: 100%; height: 1400px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic25.jpg" style="width: 100%; height: 1400px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic12.jpg" style="width: 100%; height: 1400px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic11.jpg" style="width: 100%; height: 1400px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic16.jpg"style="width: 100%; height: 1400px;">
 		</div>
 	</div>
 

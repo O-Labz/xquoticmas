@@ -8,7 +8,7 @@
 
 
 	// populate table
-	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtstyle', 'shirtsize', 'shirtcolor', 'shortssize', 'mug', 'jar', 'tote', 'wrag', 'phonecase', 'ring', 'mardi', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber');
+	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtstyle', 'shirtsize', 'shirtcolor', 'shortssize', 'mug', 'jar', 'tote', 'wrag', 'phonecase', 'ring', 'mardi', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber','dte');
 
 	// Loop over field names, make sure each one exists and is not empty
 	foreach($required as $field) {
@@ -16,7 +16,7 @@
 	    $$field = $_POST[$field];
 	  }
 	  else{
-	  	$$field = 'N/A ';
+	  	$$field = ' ';
 	  }
 	}
 
@@ -97,6 +97,16 @@
 
 	$ordertotal = $packageprice * $quantity;
 
+	$invoicenumber = uniqid();
+
+	$orderstatus = 'placed';
+
+	$dte = date("Y/m/d");
+
+	if ($paymenttype == 'facetoface' || $paymenttype == 'bank') {
+		$paymentstatus = 'unpaid';
+	}
+
 	
 
 	// THIS CODE CHECKS THE DATABASES CONNECTION
@@ -109,13 +119,13 @@
 
 
 
-	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, jouvert, shirtstyle, shirtsize, shirtcolor, shortssize, mug, jar, tote, wrag, phonecase, ring, mardi, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, jouvert, shirtstyle, shirtsize, shirtcolor, shortssize, mug, jar, tote, wrag, phonecase, ring, mardi, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber, dte) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = mysqli_prepare($abc, $query);
 
 
     //Bind statement with outputs from form
-    mysqli_stmt_bind_param($stmt, "sssssssssssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtstyle, $shirtsize, $shirtcolor, $shortssize, $mug, $jar, $tote, $wrag, $phonecase, $ring, $mardi, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber);
+    mysqli_stmt_bind_param($stmt, "ssssssssssssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtstyle, $shirtsize, $shirtcolor, $shortssize, $mug, $jar, $tote, $wrag, $phonecase, $ring, $mardi, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber, $dte);
     
     mysqli_stmt_execute($stmt);
 
@@ -126,7 +136,7 @@
     
     mysqli_close($abc);
 
-    // sendEmail($email);
+    sendEmail($email);
 
     //header($register_link);
 
@@ -173,6 +183,13 @@
     <link href="/Xquoticmas/stylesheet/css/lightbox.min.css" rel="stylesheet">
     <link href="/Xquoticmas/stylesheet/css/homestyle.css" rel="stylesheet">
 
+
+    <?php
+    	if ($subpackage == 'N/A') {
+    		$subpackage = '';
+    	}
+    ?>
+
 </head>
 <body>
 <img src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 25%; position: fixed; right: 0; left: 0; top: 0;">
@@ -210,7 +227,7 @@
                 <br>
                 <h1>Order Details</h1>
                 <p style="font-size:160%;">Order #: <?php echo $invoicenumber; ?></p>
-                <p style="font-size:160%;">Date: <?php echo $firstname; ?></p>
+                <p style="font-size:160%;">Date: <?php echo $dte; ?></p>
                 <hr>
                 <b style="margin-right: 100px;">Quantity</b><span style="margin: 100px;"><b>Purchase Description</b></span><b style="margin: 100px;">Amount</b>
                 <br>
