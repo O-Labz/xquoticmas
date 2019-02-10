@@ -5,12 +5,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require './phpmailer/vendor/autoload.php';
-require './phpmailer/vendor/phpmailer/phpmailer/src/Exception.php';
-require './phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require './phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php';
+require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/autoload.php';
+require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/Exception.php';
+require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php';
 
-sendEmail('omri.hopson@gmail.com');
 
 function sendEmail($toAddress)
 {
@@ -20,7 +19,7 @@ function sendEmail($toAddress)
             $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             // $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            // $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'omri.hopson@gmail.com';                 // SMTP username
             $mail->Password = 'alshika54';                           // SMTP password
             $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted

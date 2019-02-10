@@ -44,16 +44,16 @@
 
     <div class="con">
 		<div class="img-fluid">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic1.jpg" style="width: 100%; height: 1080px; ">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic12.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic11.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic4.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic5.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic6.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic7.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic8.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic9.jpg" style="width: 100%; height: 1080px;">
-		  <img class="mySlides" src="/Xquoticmas/assets/gallery/pic10.jpg"style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic1.jpg" style="width: 100%; height: 1080px; ">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic12.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic11.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic4.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic5.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic6.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic7.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic8.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic9.jpg" style="width: 100%; height: 1080px;">
+		  <img class="mySlides" src="/Xquoticmas/assets/gallery/shoot/pic10.jpg"style="width: 100%; height: 1080px;">
 		</div>
 	</div>
 
