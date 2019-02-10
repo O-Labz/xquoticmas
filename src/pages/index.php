@@ -19,6 +19,11 @@
 	  		include 'header.php';
 	  		include 'gallery.php';
 		break;
+		case 'shoot':
+			# code...
+	  		include 'header.php';
+	  		include 'shoot.php';
+		break;
 	  	case 'package':
 			# code...
 	  		include 'header.php';

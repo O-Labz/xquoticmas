@@ -62,18 +62,18 @@
 	<div class="row">
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Build-A-Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic8.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic2.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
 	    		<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/gallery/pic8.jpg" data-ordertotal="2000.00 JMD" >Customize Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/package/pic2.jpeg" data-ordertotal="2000.00 JMD" >Customize Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Drinks Only Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic1.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic4.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
@@ -82,12 +82,12 @@
 				<br>
 				<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/gallery/pic1.jpg" data-ordertotal="2000.00 JMD" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Drinks Only Package" data-picture="/Xquoticmas/assets/package/pic4.jpeg" data-ordertotal="2000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">T-Shirt &amp; Drinks Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic2.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic3.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
@@ -96,12 +96,12 @@
 				<br>
 				<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic2.jpg" data-ordertotal="4000.00 JMD" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="T-Shirt &amp; Drinks Package" data-picture="/Xquoticmas/assets/package/pic3.jpeg" data-ordertotal="4000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Costume &amp; Drinks Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic3.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic1.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mug</li>
@@ -109,12 +109,12 @@
 				<li>Xquotic Costume</li>
 				<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/gallery/pic3.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Costume &amp; Drinks Package" data-picture="/Xquoticmas/assets/package/pic1.jpeg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Basic T-Shirt Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic4.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic1.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -127,12 +127,12 @@
 				<br>
 				<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic4.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic T-Shirt Package" data-picture="/Xquoticmas/assets/package/pic1.jpeg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Basic Costume Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic5.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic1.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -145,12 +145,12 @@
 				<br>
 				<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/gallery/pic5.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Basic Costume Package" data-picture="/Xquoticmas/assets/package/pic1.jpeg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Premium T-Shirt Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic6.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic1.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -163,12 +163,12 @@
 				<li>Xquotic Waterproof Phone Case</li>
 				<li>Xquotic Metal Phone Ring</li>
 				<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/gallery/pic6.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium T-Shirt Package" data-picture="/Xquoticmas/assets/package/pic1.jpeg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Premium Costume Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/gallery/pic7.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic1.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -181,7 +181,7 @@
 				<li>Xquotic Metal Phone Ring</li>
 				<li>Mardi Gras</li>
 				<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/gallery/pic7.jpg" data-ordertotal="2000.00" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/package/pic1.jpeg" data-ordertotal="2000.00" >Register Now</button>
 	  		</div>
 		</div>
 
