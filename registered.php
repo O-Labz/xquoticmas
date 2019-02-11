@@ -151,7 +151,7 @@
 	    </thead>
 	    <tbody>
 
-			<?php while($row = mysqli_fetch_array($response)):?>
+			<?php while($row = mysqli_fetch_array($response)): ?>
 			<tr>
 			    <td><?php echo $row['firstname'];?></td>
 			    <td><?php echo $row['lastname'];?></td>

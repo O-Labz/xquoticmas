@@ -41,6 +41,11 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
   </head>
 
   <body>
@@ -108,7 +113,7 @@
 		require_once('./src/config/conf.php');
 
 		//Get data from market view table
-		$query = "SELECT `firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age`,`quantity`,`package`,`shirtstyle`,`shirtsize`,`shirtcolor`,`ordertotal`,`orderstatus`,`paymenttype`,`paymentstatus`,`invoicenumber` FROM `orders` WHERE `package` = 'tshirtanddrinks'";
+		$query = "SELECT `id`,`firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age`,`quantity`,`package`,`shirtstyle`,`shirtsize`,`shirtcolor`,`ordertotal`,`orderstatus`,`paymenttype`,`paymentstatus`,`invoicenumber` FROM `orders` WHERE `package` = 'tshirtanddrinks'";
 
 
 		// Get a response from the database by sending the connection
@@ -157,11 +162,12 @@
 			<th>Payment Type</th>
 			<th>Payment Status</th>
 			<th>Invoice Number</th>
+			<th>Edit</th>
 	      </tr>
 	    </thead>
 	    <tbody>
 
-			<?php while($row = mysqli_fetch_array($response)):?>
+			<?php while($row = mysqli_fetch_array($response)): $key = $row['id'];?>
 			<tr>
 			    <td><?php echo $row['firstname'];?></td>
 			    <td><?php echo $row['lastname'];?></td>
@@ -179,7 +185,8 @@
 				<td><?php echo $row['orderstatus'];?></td>
 				<td><?php echo $row['paymenttype'];?></td>
 				<td><?php echo $row['paymentstatus'];?></td>
-				<td><?php echo $row['invoicenumber'];?></td>            
+				<td><?php echo $row['invoicenumber'];?></td>
+				<td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal">Edit</button></td>
 			</tr>
 			<?php endwhile ;?>
 
@@ -190,6 +197,45 @@
 	<?php mysqli_close($abc); ?>
 	<br>
 	<br>
+
+	<!-- Modal -->
+	<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="editModal">Make Changes to Order</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <form action="carrieredit1.php" method="POST" enctype="multipart/form-data"> 
+		      <div class="modal-body">
+	              <div class="form-row">
+	                <div class="form-group col-md-6">
+	                  <select id="inputState" class="form-control" id="orderstatus" name="orderstatus">
+	                    <option value="placed" selected>Placed</option>
+	                    <option value="confirmed">Confirmed</option>
+	                    <option value="delivered">Delivered</option>
+	                  </select>
+	                </div>
+	                <div class="form-group col-md-6">
+	                  <select id="inputState" class="form-control" id="paymentstatus" name="paymentstatus">
+	                    <option value="paid" selected>Paid</option>
+	                    <option value="notpaid">Not Paid</option>
+	                  </select>
+	                </div>
+	              </div>
+	          </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="submit" name="submit" value="<?php echo $key; ?>" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	  </form>
+	</div>
+	</div>
+
   </body>
 	<div class="container-fluid fixed-bottom" style="background-color: #efefef; width: 100%; position: fixed; opacity: .9;">
 		<div class="row justify-content-md-center">
