@@ -219,7 +219,7 @@
                 Thank you for choosing Xquotic Mas ! If you have any questions with regard to your order please visit our website and contact us as soon as possible.
                 <br>
                 <br>
-                In the event that we need to reach you we will contact you using the number below.
+                In the event that we need to reach you we will contact you using the number or email below.
                 <br>
                 <h1 style="font-size:300%;">Invoice</h1>
                 <p style="font-size:160%;">Name on Order: <?php echo $firstname, ' ',  $lastname; ?></p>

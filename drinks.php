@@ -70,12 +70,15 @@
 		    right:0;
 		    object-fit: fill;
 		}
-		.container{
-		  width: 100%;
-		  position: relative;
-/*		  left: 0;
-		  right: 0;*/
+		.container-fluid{
+
+		  position: fixed;
 		  margin-top: 15%;
+		}
+		.scrollable{
+			height: 500px;
+			width: 100%;
+			overflow-y: auto;
 		}
 		th{
 			background-color: #620365;
@@ -88,7 +91,7 @@
 		<div class="container fixed-top" style="position: fixed; margin-top: 10.5%; padding-left: 5em;">
 			<div class="row justify-content-md-center">
 				    <div class="col-md-auto">
-				    		<a class="nav-link active" href="index.php?page=home">Home</a>
+				    		<a class="nav-link active" href="admin.php?page=home">Home</a>
 					</div>
 					<div class="col-md-auto">
 				    		<a class="nav-link" href="index.php?page=about">About Us</a>
@@ -124,7 +127,7 @@
 
 
 
-	<div class="container">
+	<div class="container-fluid">
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
 		<option value="<?php echo($Welcome_link); ?>">Custom Orders</option>
@@ -141,8 +144,9 @@
 	<br>
 	<br>
 	  <h2>Drinks Only Table</h2>
+	  <div class="scrollable">
 	  <table class="table table-bordered table-sm table-striped table-hover" style="overflow-y: auto;">
-	    <thead class="thead-inverse">
+	    <thead class="thead-inverse" >
 	      <tr>
 			<th>Firstname</th>
 			<th>Lastname</th>
@@ -185,6 +189,7 @@
 
 	    </tbody>
 	  </table>
+	  </div>
 	</div>
 
 	<?php mysqli_close($abc); ?>
