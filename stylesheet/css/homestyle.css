@@ -1,0 +1,38 @@
+nav .navbar-nav li a{
+  color: #ffffff !important;
+  }
+
+nav .navbar-nav li a:hover{
+    transform: scale(1.1);
+}
+
+
+
+.mySlides {
+  display:none;
+}
+
+/*.container{
+  width: 55%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  padding-left: 2em;
+  margin-top: 15%;
+}*/
+
+
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 1.9em;
+  font-family: Baskerville;
+}

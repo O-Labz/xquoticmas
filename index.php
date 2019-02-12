@@ -48,59 +48,128 @@
 		});
     </script>
 
+
+    <style>
+		body, html {
+		  height: 100%;
+		  margin: auto;
+		}
+
+		.background {
+		  /* The image used */
+		  background-image: url("./assets/LandingBackGroungtwo.png");
+
+		  /* Full height */
+		  height: 100%; 
+
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: 100% 100%;
+		}
+
+		.caption {
+		  position: absolute;
+		  left: 0;
+		  top: 78%;
+		  width: 100%;
+		  text-align: center;
+/*		  color: #000;*/
+		}
+
+		.caption span.bdd {
+		  padding: 18px;
+		  font-weight: bold;
+		  padding-left: 7em;
+		  font-size: 27px;
+		  letter-spacing: 8px;
+		}
+
+		.caption span.bd {
+		  padding: 18px;
+		  padding-left: 2em;
+		  font-size: 20px;
+		  letter-spacing: 5px;
+		}
+
+	</style>
+
   </head>
 
   <body>
-    
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<!-- Logo Image -->
-	<div class="container">
-  		<img src="./assets/LandingBackGroung.png" id="exotic" alt="exotic" style="width: 100%; position: fixed;   margin: auto; top: 0; right: 0; left: 0;">
-	</div>
-
-    <div class="container">
-  		<img src="./assets/MasLogo.png" id="exotic" alt="exotic" style="width: 500px; position: fixed; margin: auto; margin-top: 28.5%; right: 0; left: 0;">
-	</div>
-
-	<div class="container">
-  		<h1 style="width: 100%; position: relative; margin: auto; margin-top: 65%; padding-left: 6em; right: 0; left: 0;">Are you of legal age to party with Xquotic ? </h1>
-	    <form action="./src/pages/index.php" method="POST" enctype="multipart/form-data" style="width: 100%; position: absolute; margin: auto; padding-left: 33em; right: 0; left: 0;">
-<!-- 	      <label for="date">Your Birth Date:</label> -->
-	      	<font size="5">Your Birth Date:</font>
-	        <select id="year" name="year" required>
-	          <option value="year">year</option>
-	        </select>
-	        <select id="day" name="day" required>
-	          <option value="month">month</option>
-	          <option value='1'>Janaury</option>
-			  <option value='2'>February</option>
-			  <option value='3'>March</option>
-			  <option value='4'>April</option>
-			  <option value='5'>May</option>
-			  <option value='6'>June</option>
-			  <option value='7'>July</option>
-			  <option value='8'>August</option>
-			  <option value='9'>September</option>
-			  <option value='10'>October</option>
-			  <option value='11'>November</option>
-			  <option value='12'>December</option>
-	        </select> 
-	        <select id="day" name="day" required>
-	          <option value="day">day</option>
-	          <option value="Headley Facey">Headley Facey</option>
-	          <option value="Raymour Wilson">Raymour Wilson</option>
-	          <option value="Courtney Barrett">Courtney Barrett</option>
-	          <option value="Carlyle Ruddock">Carlyle Ruddock</option>
-	        </select>
-	      <button type="submit" class="btn btn-outline-info" style="width: 250px; margin-left: 18px;">Enter</button>
+  	<div class="background">
+  		<div class="caption">
+  			  <div class="row justify-content-center">
+    			<div class="col-9">
+			       <span class="bdd"><center>Are you of legal age to party with Xquotic ?</center></span>
+			    </div>
+			  </div>
+			  <div class="row justify-content-center">
+					<div class="col-9">
+				  	<form action="./src/pages/bday.php" method="POST" enctype="multipart/form-data">
+	<!-- 	      <label for="date">Your Birth Date:</label> -->
+		      	<span class="bd">Your Birth Date</span>
+		      	<br>
+		        <select id="year" name="year" required>
+		          <option value="year">year</option>
+		        </select>
+		        <select id="month" name="month" required>
+		          <option value="month">month</option>
+		          <option value='1'>Janaury</option>
+				  <option value='2'>February</option>
+				  <option value='3'>March</option>
+				  <option value='4'>April</option>
+				  <option value='5'>May</option>
+				  <option value='6'>June</option>
+				  <option value='7'>July</option>
+				  <option value='8'>August</option>
+				  <option value='9'>September</option>
+				  <option value='10'>October</option>
+				  <option value='11'>November</option>
+				  <option value='12'>December</option>
+		        </select> 
+		        <select id="day" name="day" required>
+		          	<option value="day">day</option>
+					<option value='1'>1</option>
+					<option value='2'>2</option>
+					<option value='3'>3</option>
+					<option value='4'>4</option>
+					<option value='5'>5</option>
+					<option value='6'>6</option>
+					<option value='7'>7</option>
+					<option value='8'>8</option>
+					<option value='9'>9</option>
+					<option value='10'>10</option>
+					<option value='11'>11</option>
+					<option value='12'>12</option>
+					<option value='13'>13</option>
+					<option value='14'>14</option>
+					<option value='15'>15</option>
+					<option value='16'>16</option>
+					<option value='17'>17</option>
+					<option value='18'>18</option>
+					<option value='19'>19</option>
+					<option value='20'>20</option>
+					<option value='21'>21</option>
+					<option value='22'>22</option>
+					<option value='23'>23</option>
+					<option value='24'>24</option>
+					<option value='25'>25</option>
+					<option value='26'>26</option>
+					<option value='27'>27</option>
+					<option value='28'>28</option>
+					<option value='29'>29</option>
+					<option value='30'>30</option>
+					<option value='31'>31</option>
+		        </select>
+		        <br>
+		        <br>
+		      <button type="submit" class="btn btn-outline-info" style="width: 300px;">Enter</button>
 	    </form>
-	</div>
-
+					</div>
+			  </div>
+		</div>
+  	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -108,5 +177,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
- <!--  <footer style="width: 650px; position: absolute;   margin: auto; bottom: 4; right: 0; left: 0;"> <strong>Digicel Group</strong> ©2016 Roamtech  - <strong> Version 1.0.0</strong></footer> -->
 </html>

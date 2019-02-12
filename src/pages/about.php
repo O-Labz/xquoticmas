@@ -1,11 +1,21 @@
-
-
-
+<style type="text/css">
+  .container{
+    width: 55%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    padding-left: 2em;
+    margin-top: 15%;
+  }
+  
+</style>
 	<div class="container my-container">
 
 		<h3>You've asked and we’ve delivered.</h3>
 		<p>
-			Xquotic Mas is a new premium carnival experience, bringing the authentic carnivalesque of the Eastern Caribbean to Jamaica We are an all-inclusive band, aiming to bring the highest production standard to our people, making our debut on the scene at UWI Carnival March 2019. 
+			Xquotic Mas is a new premium carnival experience, bringing the authentic carnivalesque of the Eastern Caribbean to Jamaica We are an all-inclusive band, 
+			aiming to bring the highest production standard to our people, making our debut on the scene at UWI Carnival March 2019. 
 		</p>
 		<p>
 			Our mission is to cater to every individual and body type, sparing no effort in making our masqueraders the most attractive on the road, while still considering the finances of young carnival participants. Xquotic Mas brings a budget friendly carnival experience to the evolving carnival scence to the people of Jamaica, featuring on the road bringing the ultimate vibes. 
