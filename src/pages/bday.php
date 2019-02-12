@@ -5,15 +5,15 @@
 	$current= date("Y");
 
 	if($year == "year" || $month == "month" || $day == "day"){
-		header('Location: http://localhost:1234/Xquoticmas/');
+		header('Location: http://www.xquoticmas.com/');
 		echo '<div class="alert alert-danger">';
   		echo '<strong>Danger!</strong> Indicates a dangerous or potentially negative action.';
 		echo '</div>';
 	}elseif (($current - $year) >= 18) {
 		# code...
-		header('Location: http://localhost:1234/Xquoticmas/src/pages/index.php?page=home');
+		header('Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=home');
 	}else{
-		header('Location: http://localhost:1234/Xquoticmas/');
+		header('Location: http://www.xquoticmas.com/');
 	}
 
 ?>

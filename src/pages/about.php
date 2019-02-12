@@ -4,15 +4,17 @@
     position: relative;
     left: 0;
     right: 0;
-    margin: auto; 
-    padding-left: 2em;
-    margin-top: 15%;
+	margin: auto;
+	padding: 0;
+    padding-left: 5em;
   }
   
 </style>
-	<div class="container my-container">
+	<br>
+	<div class="container">
 
 		<h3>You've asked and we’ve delivered.</h3>
+		<br>
 		<p>
 			Xquotic Mas is a new premium carnival experience, bringing the authentic carnivalesque of the Eastern Caribbean to Jamaica We are an all-inclusive band, 
 			aiming to bring the highest production standard to our people, making our debut on the scene at UWI Carnival March 2019. 

@@ -4,7 +4,7 @@
 
 	// Get a connection for the database
 	require_once('../config/conf.php');
-	require_once('/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/mailer.php');
+	require_once('/home2/omrihopson/public_html/Xquoticmas/mailer.php');
 
 
 	// populate table
@@ -110,7 +110,7 @@
 	
 
 	// THIS CODE CHECKS THE DATABASES CONNECTION
-	$link = mysql_connect($rootconnect, $rootuser, $rootpassword);
+	$link = mysqli_connect($rootconnect, $rootuser, $rootpassword,$rootname);
 	if (!$link) 
 	{
 	    die('Could not connect: ' . mysql_error());
@@ -208,7 +208,7 @@
             <br>
             <br>
             <br>
-            <div class="container" style="right: 0; left: 0;"><a style="width: 300px;" href="http://localhost:1234/Xquoticmas/src/pages/index.php?page=registrationdone" class="btn btn-outline-info" role="button" aria-disabled="true">Get Back to Exquotic</a></div>
+            <div class="container" style="right: 0; left: 0;"><a style="width: 300px;" href="http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=registrationdone" class="btn btn-outline-info" role="button" aria-disabled="true">Get Back to Exquotic</a></div>
             <br>
             <br>
 

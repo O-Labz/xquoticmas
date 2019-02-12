@@ -4,13 +4,13 @@
 	// It should be saved outside of the main web documents folder
 	// and imported when needed
 	 
-	DEFINE('DB_USER', 'xauticuser');
+	DEFINE('DB_USER', 'omrihops_xauticu');
 	DEFINE('DB_PASSWORD', 'partnerdata@1##');
 	DEFINE('DB_HOST', 'localhost');
-	DEFINE('DB_NAME', 'xautic');
+	DEFINE('DB_NAME', 'omrihops_xautic');
 
-	DEFINE('DB_ROOTUSER', 'root');
-	DEFINE('DB_ROOTPASSWORD', 'turtledove@1##');
+	DEFINE('DB_ROOTUSER', 'omrihops_xauticu');
+	DEFINE('DB_ROOTPASSWORD', 'alshika54');
 
 	DEFINE('CONTACT_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=contactdone');
 	DEFINE('REGISTER_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=registrationdone');
@@ -18,7 +18,7 @@
 
 	DEFINE('WELCOME_LINK','http://www.xquoticmas.com/Xquoticmas/customorder.php');
 	DEFINE('REG_LINK','http://www.xquoticmas.com/Xquoticmas/registered.php');
-	DEFINE('COMMENTS_LINK','http://www.xquoticmas.com/Xquoticmas/Comments.php');
+	DEFINE('COMMENTS_LINK','http://www.xquoticmas.com/Xquoticmas/comments.php');
 	DEFINE('DRINKS_LINK','http://www.xquoticmas.com/Xquoticmas/drinks.php');
 	DEFINE('TSHIRT_LINK','http://www.xquoticmas.com/Xquoticmas/tshirtndrinks.php');
 	DEFINE('COSTUME_LINK','http://www.xquoticmas.com/Xquoticmas/costumendrinks.php');
@@ -34,6 +34,7 @@
 	$rootuser = DB_ROOTUSER;
 	$rootpassword = DB_ROOTPASSWORD;
 	$rootconnect = DB_HOST;
+	$rootname = DB_NAME;
 
 	$contact_link = CONTACT_LINK;
 	$register_link = REGISTER_LINK;

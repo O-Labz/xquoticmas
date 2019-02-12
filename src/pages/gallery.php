@@ -11,7 +11,11 @@
 	  filter: grayscale(100%);
 	  transition: 1s;
 	}
-
+	.scrollable{
+		height: 680px;
+		width: 100%;
+		overflow-y: auto;
+	}
 	.my-gallery img:hover{
 	  filter: grayscale(0%);
 	  transform: scale(1.1);
@@ -28,6 +32,7 @@
 	    <a class="nav-link" href="index.php?page=shoot">Xquotic Photo Shoot</a>
 	  </li>
 	</ul>
+	<div class="scrollable">
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic1.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic1.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic6.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic6.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic7.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic7.jpg"></a>
@@ -86,4 +91,5 @@
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic57.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic57.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic58.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic58.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic59.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic59.jpg"></a>
+</div>
 </div>

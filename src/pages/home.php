@@ -4,7 +4,6 @@
     <title>Xquatic Mas: Home</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Favicon -->
@@ -70,13 +69,31 @@
 	<!-- Logo Nav Bar -->
 
 	<style type="text/css">
-		a{
+		.headerPicture {
+			width: 25%;
+		}
+
+		.navigation {
+			left:0;
+		    right:0;
+		    overflow: hidden;
+		    text-align: center;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav-link{
 			font-size: 1.9em;
 			font-family: Baskerville;
 			font-weight: bold;
+			padding: 14px 16px;
+			display: inline-block;
+			text-align: center;
 			color: #ffffff;
 		}
-		a:hover{
+
+		.nav-link:hover{
 		    transform: scale(1.1);
 		    color: #ffffff;
 		}
@@ -86,34 +103,23 @@
 		    bottom:0;
 		    left:0;
 		    right:0;
+		    z-index: -1;
 		    object-fit: fill;
 		}
 	</style>
 
-	<header>
-		<img src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 25%; position: fixed; right: 0; left: 0;">
-		<div class="container fixed-top" style="position: fixed; margin-top: 10.5%; padding-left: 5em;">
-			<div class="row justify-content-md-center">
-				    <div class="col-md-auto">
-				    		<a class="nav-link active" href="index.php?page=home">Home</a>
-					</div>
-					<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=about">About Us</a>
-					</div>
-				    <div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=gallery">Gallery</a>
-			    	</div>
-			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=package">Packages</a>
-			    	</div>
-			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=contact">Contact Us</a>
-			    	</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
+	<div align="middle">
+		<img class="headerPicture" src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic">
+	</div>
+
+	<div class="navigation">
+		  <a class="nav-link" href="index.php?page=home">Home</a>
+		  <a class="nav-link" href="index.php?page=about">About Us</a>
+		  <a class="nav-link" href="index.php?page=gallery">Gallery</a>
+		  <a class="nav-link" href="index.php?page=package">Packages</a>
+		  <a class="nav-link" href="index.php?page=contact">Contact Us</a>
+	</div>
+
 <script>
 	var myIndex = 0;
 	carousel();

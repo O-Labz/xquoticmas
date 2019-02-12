@@ -45,7 +45,11 @@
 	  transition: 1s;
 	  width: 19rem;
 	}
-
+	.scrollable{
+		height: 680px;
+		width: 100%;
+		overflow-y: auto;
+	}
 	.my-gallery img:hover{
 	  filter: grayscale(0%);
 	  transform: scale(1.1);
@@ -59,6 +63,7 @@
 
 
 <div class="my-gallery">
+	<div class="scrollable">
 	<div class="row">
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Build-A-Package</h4></div>
@@ -184,6 +189,8 @@
 	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/package/pic4.jpg" data-ordertotal="8000.00 - 10000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
+	</div>
+</div>
 
 
 <!-- Drinks Modal -->

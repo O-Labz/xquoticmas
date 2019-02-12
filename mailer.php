@@ -5,10 +5,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/autoload.php';
-require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/Exception.php';
-require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require '/Applications/XAMPP/xamppfiles/htdocs/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php';
+require '/home2/omrihopson/public_html/Xquoticmas/phpmailer/vendor/autoload.php';
+require '/home2/omrihopson/public_html/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/Exception.php';
+require '/home2/omrihopson/public_html/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require '/home2/omrihopson/public_html/Xquoticmas/phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php';
 
 
 function sendEmail($toAddress)
@@ -26,7 +26,7 @@ function sendEmail($toAddress)
             $mail->Port = 465; //587 for tls                                  // TCP port to connect to
 
             //Recipients
-            $mail->setFrom('omri.hopson@gmail.com', 'Xquotic Mas');
+            $mail->setFrom('xquoticmas@gmail.com', 'Xquotic Mas');
             // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
             $mail->addAddress($toAddress);               // Name is optional
             // $mail->addReplyTo('info@example.com', 'Information');

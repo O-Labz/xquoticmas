@@ -90,18 +90,17 @@
 				    		<a class="nav-link active" href="admin.php?page=home">Home</a>
 					</div>
 					<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=about">About Us</a>
+				    		<a class="nav-link" href="src/pages/index.php?page=about">About Us</a>
 					</div>
 				    <div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=gallery">Gallery</a>
+				    		<a class="nav-link" href="src/pages/index.php?page=gallery">Gallery</a>
 			    	</div>
 			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=package">Packages</a>
+				    		<a class="nav-link" href="src/pages/index.php?page=package">Packages</a>
 			    	</div>
 			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="index.php?page=contact">Contact Us</a>
+				    		<a class="nav-link" href="src/pages/index.php?page=contact">Contact Us</a>
 			    	</div>
-				</div>
 			</div>
 		</div>
 	</header>

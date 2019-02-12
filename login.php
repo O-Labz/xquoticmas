@@ -1,6 +1,6 @@
 <?php
    include("./src/config/conf.php");
-   session_start();
+   // session_start();
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
@@ -31,14 +31,17 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
+         //session_register("myusername");
+         // $_SESSION['login_user'] = $myusername;
+         mysqli_close($abc);
+         header('Location: http://www.xquoticmas.com/Xquoticmas/drinks.php');
          
          // header($admin_link);
       }else {
-         // $error = "Your Login Name or Password is invalid";
          echo "Your Login Name or Password is invalid";
-         echo $count;
+         header('Location: http://www.xquoticmas.com/Xquoticmas/admin.php');
+         mysqli_close($abc);
+         exit();
       }
    }
 ?>

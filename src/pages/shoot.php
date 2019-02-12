@@ -11,7 +11,11 @@
 	  filter: grayscale(100%);
 	  transition: 1s;
 	}
-
+	.scrollable{
+		height: 680px;
+		width: 100%;
+		overflow-y: auto;
+	}
 	.my-gallery img:hover{
 	  filter: grayscale(0%);
 	  transform: scale(1.1);
@@ -28,6 +32,7 @@
 	    <a class="nav-link active" href="index.php?page=shoot">Xquotic Photo Shoot</a>
 	  </li>
 	</ul>
+	<div class="scrollable">
 	<a href="/Xquoticmas/assets/gallery/shoot/pic1.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic1.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/shoot/pic2.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic2.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/shoot/pic3.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic3.jpg"></a>
@@ -58,4 +63,5 @@
 	<a href="/Xquoticmas/assets/gallery/shoot/pic26.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic26.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/shoot/pic27.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic27.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/shoot/pic28.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/shoot/pic28.jpg"></a>
+</div>
 </div>
