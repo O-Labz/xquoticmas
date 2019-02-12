@@ -1,7 +1,6 @@
 <style type="text/css">
 	.my-gallery{
 	  margin: 10px 50px;
-	  padding-top: 200px;
 	}
 
 	.my-gallery img{

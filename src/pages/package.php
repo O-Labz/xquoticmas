@@ -18,7 +18,6 @@
 <style type="text/css">
 	.my-gallery{
 	  margin: 10px 50px;
-	  padding-top: 200px;
 	}
 
 	.my-gallery .card .title-body .card-head{
@@ -207,7 +206,7 @@
       	  <div class="container-fluid">
 		    <div class="col-md-10 ml-auto" style="margin: 2px 5px;"><img class="card-img-top" id="pic" name="pic" src="" alt="Card image cap"></div>
 		    <div class="row">
-		      <div class="col-md-7 ml-auto" style="margin: 1px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly></input></div>
+		      <div class="col-md-7 ml-auto" style="margin: 1px;"><input type="text" style="font-size: 1.2em; font-family: Baskerville; color: #000000; border: none; display: inline;" id="ordertotal" name="ordertotal" readonly hidden="true"></input></div>
 		    </div>
 			<div class="container my-container">
 			  <form action="drinksonly.php" method="POST" enctype="multipart/form-data">

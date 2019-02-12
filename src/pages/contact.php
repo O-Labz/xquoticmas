@@ -18,7 +18,6 @@
     right: 0;
     margin: auto; 
     padding-left: 2em;
-    margin-top: 15%;
   }
 </style>
 
