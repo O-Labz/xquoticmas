@@ -96,6 +96,10 @@
 			color: #620365;
 		}
 
+		.foot-link{
+			padding: 1px 1px;
+		}
+
 		.nav-link:hover{
 		    transform: scale(1.1);
 		    color: #620365;
