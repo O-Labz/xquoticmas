@@ -4,7 +4,6 @@
     <title>Xquatic Mas: Home</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Favicon -->
@@ -41,10 +40,16 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
+    <script type="text/javascript" src="/Xquoticmas/stylesheet/js/lightbox-plus-jquery.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="/Xquoticmas/stylesheet/js/lightbox-plus-jquery.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   </head>
 
@@ -53,15 +58,37 @@
 	<!-- Logo Nav Bar -->
 
 	<style type="text/css">
-		a{
+		.headerPicture {
+			width: 25%;
+		}
+
+		.navigation {
+			left:0;
+		    right:0;
+		    overflow: hidden;
+		    text-align: center;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav-link{
 			font-size: 1.9em;
 			font-family: Baskerville;
 			font-weight: bold;
+			padding: 14px 16px;
+			display: inline-block;
+			text-align: center;
 			color: #620365;
 		}
-		a:hover{
+
+		.foot-link{
+			padding: 1px 1px;
+		}
+
+		.nav-link:hover{
 		    transform: scale(1.1);
-		    color: #3e0444;
+		    color: #620365;
 		}
 		.con {
 		    position:fixed;
@@ -69,11 +96,13 @@
 		    bottom:0;
 		    left:0;
 		    right:0;
+		    z-index: -1;
 		    object-fit: fill;
 		}
+
 		.container-fluid{
+
 		  position: fixed;
-		  margin-top: 15%;
 		}
 		.scrollable{
 			height: 500px;
@@ -84,31 +113,20 @@
 			background-color: #620365;
 			color: #ffffff;
 		}
+
 	</style>
 
-	<header>
-		<img src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic" style="width: 25%; position: fixed; right: 0; left: 0;">
-		<div class="container fixed-top" style="position: fixed; margin-top: 10.5%; padding-left: 5em;">
-			<div class="row justify-content-md-center">
-				    <div class="col-md-auto">
-				    		<a class="nav-link active" href="admin.php?page=home">Home</a>
-					</div>
-					<div class="col-md-auto">
-				    		<a class="nav-link" href="src/pages/index.php?page=about">About Us</a>
-					</div>
-				    <div class="col-md-auto">
-				    		<a class="nav-link" href="src/pages/index.php?page=gallery">Gallery</a>
-			    	</div>
-			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="src/pages/index.php?page=package">Packages</a>
-			    	</div>
-			    	<div class="col-md-auto">
-				    		<a class="nav-link" href="src/pages/index.php?page=contact">Contact Us</a>
-			    	</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	<div align="middle">
+		<img class="headerPicture" src="/Xquoticmas/assets/MasLogo.png" id="exotic" alt="exotic">
+	</div>
+
+	<div class="navigation">
+		  <a class="nav-link" href="index.php?page=home">Home</a>
+		  <a class="nav-link" href="index.php?page=about">About Us</a>
+		  <a class="nav-link" href="index.php?page=gallery">Gallery</a>
+		  <a class="nav-link" href="index.php?page=package">Packages</a>
+		  <a class="nav-link" href="index.php?page=contact">Contact Us</a>
+	</div>
 
 	<?php
 		// Get a connection for the database

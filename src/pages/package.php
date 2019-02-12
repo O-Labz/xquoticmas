@@ -45,7 +45,7 @@
 	  width: 19rem;
 	}
 	.scrollable{
-		height: 680px;
+		height: 100%;
 		width: 100%;
 		overflow-y: auto;
 	}
@@ -66,13 +66,13 @@
 	<div class="row">
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Build-A-Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic8.png" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic8.jpeg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 	    		<p class="card-text">Here you have the option to fully customize your xquotic experience by selecting any of our products.</p>
 	    		<br>
 	    		<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/package/pic8.png" data-ordertotal="2000.00 JMD" >Customize Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#buildModal" data-title="Build-A-Package" data-picture="/Xquoticmas/assets/package/pic8.jpeg" data-ordertotal="2000.00 JMD" >Customize Now</button>
 	  		</div>
 		</div>
 		<div class="card">
@@ -172,7 +172,7 @@
 		</div>
 		<div class="card">
 			<div class="title-body"><h4 class="card-head">Premium Costume Package</h4></div>
-	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic4.jpg" alt="Card image cap">
+	  		<img class="card-img-top" src="/Xquoticmas/assets/package/pic9.jpg" alt="Card image cap">
 	  		<div class="card-body">
 	    		<h5 class="card-title">Package Contents</h5>
 				<li>Xquotic Mason Jar</li>
@@ -185,7 +185,7 @@
 				<li>Xquotic Metal Phone Ring</li>
 				<li>Mardi Gras</li>
 				<hr>
-	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/package/pic4.jpg" data-ordertotal="8000.00 - 10000.00 JMD" >Register Now</button>
+	    		<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#drinksModal" data-title="Premium Costume Package" data-picture="/Xquoticmas/assets/package/pic9.jpg" data-ordertotal="8000.00 - 10000.00 JMD" >Register Now</button>
 	  		</div>
 		</div>
 	</div>
@@ -653,26 +653,26 @@
 
 					<div class="form-row">
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="mug" id="mug" value="mug"> Mug ($300)</input>
+					        <input type="checkbox" name="mug" id="mug" value="mug"> Mug</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="jar" id="jar" value="jar"> Mason Jar ($800)</input>
+					        <input type="checkbox" name="jar" id="jar" value="jar"> Mason Jar</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="tote" id="tote" value="tote"> Tote Bag (pre-selected) ($500)</input>
+					        <input type="checkbox" name="tote" id="tote" value="tote"> Tote Bag (pre-selected)</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="wrag" id="wrag" value="wrag"> Wave Rag ($400)</input>
+					        <input type="checkbox" name="wrag" id="wrag" value="wrag"> Wave Rag</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="phonecase" id="phonecase" value="phonecase"> Waterproof Phone Case ($400)</input>
+					        <input type="checkbox" name="phonecase" id="phonecase" value="phonecase"> Waterproof Phone Case</input>
 					      </div>
 					      <br>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="ring" id="ring" value="ring"> Metal Phone Ring ($500)</input>
+					        <input type="checkbox" name="ring" id="ring" value="ring"> Metal Phone Ring</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="mardi" id="mardi" value="mardi"> Mardi Gras ($100)</input>
+					        <input type="checkbox" name="mardi" id="mardi" value="mardi"> Mardi Gras</input>
 					      </div>
 
 					      <div class="form-group col-md-12">
@@ -705,7 +705,7 @@
 			    <label for="inputState">Select a Package</label>
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="tshirtanddrinks"> T-Shirt ($1000)
+			        <input type="radio" id="package"  name="package" value="tshirtanddrinks"> T-Shirt
 			      </div>
 			      	<div id="tshirtanddrinkstextboxes">
 				     <div class="form-row">
@@ -746,19 +746,19 @@
 				<div id="costumeandrinkstextboxes" style="display: none">
 				    <div class="form-row">
 				      <div class="form-group col-md-6">
-				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline ($4500)
+				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline
 				      </div>
 				      <div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicandrosback"> Andros Backline ($4500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicandrosback"> Andros Backline
 				      </div>
 				      <div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline ($4500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline
 				      </div>
 				      <div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadiseback"> Paradise Backline ($4500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadiseback"> Paradise Backline
 				      </div>
 				      <div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma ($5500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma
 				      </div>
 				    </div>
 				</div>
@@ -767,7 +767,7 @@
 				</div>
 				<hr>
 			      	  <div class="form-group col-md-12">
-				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline or Backline($4500)
+				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline or Backline
 				      </div>
 					<div id="basicandrostextboxes">
 						<div class="form-row">
@@ -787,7 +787,7 @@
 					</div>
 					<hr>
 						<div class="form-group col-md-12">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline or Backline ($4500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline or Backline
 				      </div>
 					<div id="basicparadisetextboxes">
 					<div class="form-row">
@@ -814,7 +814,7 @@
 					</div>
 					<hr>
 						<div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma ($5500)
+				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma
 				      </div>
 					<div id="basicexumatextboxes">
 					<div class="form-row">

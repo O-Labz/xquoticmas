@@ -10,7 +10,7 @@
 	DEFINE('DB_NAME', 'omrihops_xautic');
 
 	DEFINE('DB_ROOTUSER', 'omrihops_xauticu');
-	DEFINE('DB_ROOTPASSWORD', 'alshika54');
+	DEFINE('DB_ROOTPASSWORD', 'partnerdata@1##');
 
 	DEFINE('CONTACT_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=contactdone');
 	DEFINE('REGISTER_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=registrationdone');

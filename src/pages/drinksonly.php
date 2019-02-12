@@ -22,6 +22,7 @@
 
 	$packageprice = '';
 	$packagename = '';
+	$paymentmessage = '';
 
 	//Get data from market view table
 	$quer = "SELECT * FROM `packages` WHERE `name` = '$package'";
@@ -115,7 +116,7 @@
 	{
 	    die('Could not connect: ' . mysql_error());
 	}
-	mysql_select_db('xautic') or die( "Unable to select database");
+	mysqli_select_db($link, "omrihops_xautic") or die( "Unable to select database");
 
 
 
@@ -188,6 +189,11 @@
     	if ($subpackage == 'N/A') {
     		$subpackage = '';
     	}
+    	if ($paymenttype == 'bank') {
+    		$paymentmessage = 'Your choice of payment was to do a bank deposite. A member from the Xquotic team will be contacting you shortly with more details.';
+    	}else{
+    		$paymentmessage = 'Your choice of payment was to meet face to face. A member from the Xquotic team will be contacting you shortly with more details.';
+    	}
     ?>
 
 </head>
@@ -216,7 +222,7 @@
             <div class="container" style="position: relative; right: 0; left: 0; top: 0; bottom: 0; border: 2px; border-radius: 8px; ">
                 <p style="font-size:160%;">Hi <?php echo $firstname; ?> ,</p>
                 <br>
-                Thank you for choosing Xquotic Mas ! If you have any questions with regard to your order please visit our website and contact us as soon as possible.
+                Thank you for choosing Xquotic Mas! If you have any questions with regard to your order please visit our website and contact us as soon as possible.
                 <br>
                 <br>
                 In the event that we need to reach you we will contact you using the number or email below.
@@ -228,11 +234,25 @@
                 <h1>Order Details</h1>
                 <p style="font-size:160%;">Order : <?php echo $invoicenumber; ?></p>
                 <p style="font-size:160%;">Date: <?php echo $dte; ?></p>
-                <hr>
-                <b style="margin-right: 100px;">Quantity</b><span style="margin: 100px;"><b>Purchase Description</b></span><b style="margin: 100px;">Amount</b>
-                <br>
-                <br>
-                <b style="margin-right: 263px;"><?php echo $quantity; ?></b><span style="margin-right: 250px;"><b><?php echo $package, ' ',  $subpackage; ?></b></span><b><?php echo $ordertotal; ?> JMD</b>
+                <p style="font-size:160%;">Payment Choice: <?php echo $paymentmessage; ?></p>
+
+				<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th scope="col">Quantity</th>
+				      <th scope="col">Purchase Description</th>
+				      <th scope="col">Order Amount</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><?php echo $quantity; ?></td>
+				      <td><?php echo $package, ' ',  $subpackage; ?></td>
+				      <td><?php echo $ordertotal; ?> JMD</td>
+				    </tr>
+				  </tbody>
+				</table>
+
                 <hr>
 				<br>
 				<br>

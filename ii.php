@@ -72,6 +72,8 @@
                   Are you of legal age to party with Xquotic ?
                </span>
 
+               <h5 style="margin-left: 3em;">Enter your Birth Date</h5>
+               <br>
                <div class="wrap-input100 validate-input">
                  <select class="input100" id="year" name="year" required>
                    <option value="" disabled selected>Year</option>
