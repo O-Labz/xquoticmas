@@ -130,14 +130,13 @@
     
     mysqli_stmt_execute($stmt);
 
-    //echo "Form info Added";
     
     mysqli_stmt_close($stmt);
 
     
     mysqli_close($abc);
 
-    sendEmail($email);
+    sendEmail($email,$firstname,$lastname,$phone,$invoicenumber,$dte,$quantity,$package,$subpackage,$ordertotal,$paymenttype);
 
     //header($register_link);
 

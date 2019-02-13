@@ -1,4 +1,8 @@
 <?php
+
+	ob_start();
+	ob_clean();
+
     $day = $_POST['day'];
 	$month = $_POST['month'];
 	$year = $_POST['year'];
@@ -15,5 +19,4 @@
 	}else{
 		header('Location: http://www.xquoticmas.com/');
 	}
-
 ?>
