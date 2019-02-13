@@ -213,6 +213,12 @@
             <br>
             <br>
             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="container" style="right: 0; left: 0;"><a style="width: 300px;" href="http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=registrationdone" class="btn btn-outline-info" role="button" aria-disabled="true">Get Back to Exquotic</a></div>
             <br>
             <br>
@@ -255,6 +261,7 @@
                 <hr>
 				<br>
 				<br>
+			</div>
 </body>
 </html>
 
