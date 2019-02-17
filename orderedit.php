@@ -13,12 +13,12 @@
 
 
   $response = @mysqli_query($abc, $sql);
-  if ($response) 
+  if ($response)
   {
     echo "Record updated successfully";
     exit(header('Location: http://www.xquoticmas.com/Xquoticmas/drinks.php'));
   }
-  else 
+  else
   {
     echo "Error updating record: " . mysqli_error($abc);
     exit(header('Location: http://www.xquoticmas.com/Xquoticmas/drinks.php'));

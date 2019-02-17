@@ -6,7 +6,7 @@
   ob_clean();
 
   $id = $_POST['submit'];
-  $delete = $_POST['delete'];
+  $delete = 'Y';
 
   $sql = "UPDATE `orders` SET `discard` = '$delete' WHERE `id` = ".$id."";
 

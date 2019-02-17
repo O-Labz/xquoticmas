@@ -213,7 +213,7 @@
 				<td><?php echo $row['paymentstatus'];?></td>
 				<td><?php echo $row['invoicenumber'];?></td>
 				<td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal">Edit</button></td>
-        <td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#deleteModal">Delete</button></td>
+        <td><form action="delete.php" method="POST" enctype="multipart/form-data"><button value="<?php echo $row['id'];?>" name="submit" type="submit" class="btn btn-outline-secondary" data-toggle="modal" data-target="#deleteModal">Delete</button></form></td>
 			</tr>
 			<?php endwhile ;?>
 
@@ -250,37 +250,6 @@
 	                  <select id="inputState" class="form-control" id="paymentstatus" name="paymentstatus">
 	                    <option value="paid" selected>Paid</option>
 	                    <option value="notpaid">Not Paid</option>
-	                  </select>
-	                </div>
-	              </div>
-	          </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="submit" name="submit" value="<?php echo $key; ?>" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
-	  </form>
-	</div>
-	</div>
-
-  <!-- Delete Modal -->
-	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="editModal">Are you sure you want to Delete ?</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <form action="delete.php" method="POST" enctype="multipart/form-data">
-		      <div class="modal-body">
-	              <div class="form-row">
-	                <div class="form-group col-md-6">
-	                  <select id="inputState" class="form-control" id="delete" name="delete">
-	                    <option value="Y" selected>Yes</option>
-	                    <option value="N">No</option>
 	                  </select>
 	                </div>
 	              </div>
