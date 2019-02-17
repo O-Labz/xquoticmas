@@ -133,7 +133,7 @@
 		require_once('./src/config/conf.php');
 
 		//Get data from market view table
-		$query = "SELECT `id`,`firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age`,`quantity`,`package`,`shirtstyle`,`shirtsize`,`shirtcolor`,`ordertotal`,`orderstatus`,`paymenttype`,`paymentstatus`,`invoicenumber` FROM `orders` WHERE `package` = 'basictshirt'";
+		$query = "SELECT `id`,`firstname`,`lastname`,`email`,`phone`,`nationality`,`gender`,`age`,`quantity`,`package`,`shirtstyle`,`shirtsize`,`shirtcolor`,`ordertotal`,`orderstatus`,`paymenttype`,`paymentstatus`,`invoicenumber` FROM `orders` WHERE `package` = 'basictshirt' AND `discard` = 'N'";
 
 
 		// Get a response from the database by sending the connection
@@ -184,6 +184,7 @@
 			<th>Payment Status</th>
 			<th>Invoice Number</th>
 			<th>Edit</th>
+      <th>Delete</th>
 	      </tr>
 	    </thead>
 	    <tbody>
@@ -194,20 +195,21 @@
 			    <td><?php echo $row['lastname'];?></td>
 			    <td><?php echo $row['email'];?></td>
 			    <td><?php echo $row['phone'];?></td>
-			    <td><?php echo $row['nationality'];?></td> 
+			    <td><?php echo $row['nationality'];?></td>
 				<td><?php echo $row['gender'];?></td>
-				<td><?php echo $row['age'];?></td>   
+				<td><?php echo $row['age'];?></td>
 				<td><?php echo $row['quantity'];?></td>
 				<td><?php echo $row['package'];?></td>
 				<td><?php echo $row['shirtstyle'];?></td>
 				<td><?php echo $row['shirtsize'];?></td>
-				<td><?php echo $row['shirtcolor'];?></td> 
+				<td><?php echo $row['shirtcolor'];?></td>
 				<td><?php echo $row['ordertotal'];?></td>
 				<td><?php echo $row['orderstatus'];?></td>
 				<td><?php echo $row['paymenttype'];?></td>
 				<td><?php echo $row['paymentstatus'];?></td>
-				<td><?php echo $row['invoicenumber'];?></td>   
-				<td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal">Edit</button></td> 
+				<td><?php echo $row['invoicenumber'];?></td>
+				<td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#editModal">Edit</button></td>
+        <td><button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#deleteModal">Delete</button></td>
 			</tr>
 			<?php endwhile ;?>
 
@@ -230,7 +232,7 @@
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <form action="carrieredit1.php" method="POST" enctype="multipart/form-data"> 
+	      <form action="orderedit.php" method="POST" enctype="multipart/form-data">
 		      <div class="modal-body">
 	              <div class="form-row">
 	                <div class="form-group col-md-6">
@@ -257,6 +259,39 @@
 	  </form>
 	</div>
 	</div>
+
+
+  <!-- Delete Modal -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editModal">Are you sure you want to Delete ?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="delete.php" method="POST" enctype="multipart/form-data">
+          <div class="modal-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select id="inputState" class="form-control" id="delete" name="delete">
+                      <option value="Y" selected>Yes</option>
+                      <option value="N">No</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" name="submit" value="<?php echo $key; ?>" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+
 
   </body>
 	<div class="container-fluid fixed-bottom" style="background-color: #efefef; width: 100%; position: fixed; opacity: .9;">

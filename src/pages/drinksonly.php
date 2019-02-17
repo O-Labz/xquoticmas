@@ -8,7 +8,7 @@
 
 
 	// populate table
-	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtstyle', 'shirtsize', 'shirtcolor', 'shortssize', 'mug', 'jar', 'tote', 'wrag', 'phonecase', 'ring', 'mardi', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber','dte');
+	$required = array('firstname', 'lastname', 'email', 'phone', 'nationality', 'gender', 'age', 'quantity', 'package', 'subpackage', 'paymenttype', 'jouvert', 'shirtstyle', 'shirtsize', 'shirtcolor', 'shortssize', 'mug', 'jar', 'tote', 'wrag', 'phonecase', 'ring', 'mardi', 'costumename', 'bust', 'waist', 'hip', 'neck', 'navel', 'shoulder', 'breast', 'bra', 'panty', 'ordertotal', 'orderstatus', 'paymentstatus', 'invoicenumber','dte','discard');
 
 	// Loop over field names, make sure each one exists and is not empty
 	foreach($required as $field) {
@@ -23,6 +23,7 @@
 	$packageprice = '';
 	$packagename = '';
 	$paymentmessage = '';
+	$discard ='N';
 
 	//Get data from market view table
 	$quer = "SELECT * FROM `packages` WHERE `name` = '$package'";
@@ -37,7 +38,7 @@
 	if($response){
 
 		// <!-- populate table from mysql database -->
-		while ($row = mysqli_fetch_array($response)) 
+		while ($row = mysqli_fetch_array($response))
 		{
 		$packagename = $row['name'];
 		$packageprice = $row['price'];
@@ -108,11 +109,11 @@
 		$paymentstatus = 'unpaid';
 	}
 
-	
+
 
 	// THIS CODE CHECKS THE DATABASES CONNECTION
 	$link = mysqli_connect($rootconnect, $rootuser, $rootpassword,$rootname);
-	if (!$link) 
+	if (!$link)
 	{
 	    die('Could not connect: ' . mysql_error());
 	}
@@ -120,20 +121,20 @@
 
 
 
-	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, jouvert, shirtstyle, shirtsize, shirtcolor, shortssize, mug, jar, tote, wrag, phonecase, ring, mardi, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber, dte) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	$query = "INSERT INTO orders (firstname, lastname, email, phone, nationality, gender, age, quantity, package, subpackage, paymenttype, jouvert, shirtstyle, shirtsize, shirtcolor, shortssize, mug, jar, tote, wrag, phonecase, ring, mardi, costumename, bust, waist, hip, neck, navel, shoulder, breast, bra, panty, ordertotal, orderstatus, paymentstatus, invoicenumber, dte) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = mysqli_prepare($abc, $query);
 
 
     //Bind statement with outputs from form
-    mysqli_stmt_bind_param($stmt, "ssssssssssssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtstyle, $shirtsize, $shirtcolor, $shortssize, $mug, $jar, $tote, $wrag, $phonecase, $ring, $mardi, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber, $dte);
-    
+    mysqli_stmt_bind_param($stmt, "sssssssssssssssssssssssssssssssssssssss", $firstname, $lastname, $email, $phone, $nationality, $gender, $age, $quantity, $package, $subpackage, $paymenttype, $jouvert, $shirtstyle, $shirtsize, $shirtcolor, $shortssize, $mug, $jar, $tote, $wrag, $phonecase, $ring, $mardi, $costumename, $bust, $waist, $hip, $neck, $navel, $shoulder, $breast, $bra, $panty, $ordertotal, $orderstatus, $paymentstatus, $invoicenumber, $dte, $discard);
+
     mysqli_stmt_execute($stmt);
 
-    
+
     mysqli_stmt_close($stmt);
 
-    
+
     mysqli_close($abc);
 
     sendEmail($email,$firstname,$lastname,$phone,$invoicenumber,$dte,$quantity,$package,$subpackage,$ordertotal,$paymenttype);
@@ -264,4 +265,3 @@
 			</div>
 </body>
 </html>
-
