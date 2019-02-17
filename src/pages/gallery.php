@@ -19,9 +19,22 @@
 	  filter: grayscale(0%);
 	  transform: scale(1.1);
 	}
+
+	.background{
+	  position:fixed;
+	  top:0;
+	  bottom:0;
+	  left:0;
+	  right:0;
+	  z-index: -1;
+	  object-fit: fill;
+	}
+
 </style>
 
 
+<div >
+  <img class="background" src="/Xquoticmas/assets/feathers.png">
 <div class="my-gallery">
 	<ul class="nav nav-tabs">
 	  <li class="nav-item">
@@ -90,5 +103,6 @@
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic57.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic57.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic58.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic58.jpg"></a>
 	<a href="/Xquoticmas/assets/gallery/bandlaunch/pic59.jpg" data-lightbox="xauticm-gallery"><img src="/Xquoticmas/assets/gallery/bandlaunch/pic59.jpg"></a>
+</div>
 </div>
 </div>

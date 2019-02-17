@@ -147,16 +147,16 @@
 	<div class="container-fluid">
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-		<option value="<?php echo($Welcome_link); ?>">Custom Orders</option>
-		<option value="<?php echo($reg_link); ?>"selected>Registered Customers</option>
-		<option value="<?php echo($comments_link); ?>">Comments</option>
-		<option value="<?php echo($drinks_link); ?>">Drinks only Orders</option>
-		<option value="<?php echo($tshirt_link); ?>">T-Shirt and Drinks</option>
-		<option value="<?php echo($costume_link); ?>">Costume and Drinks Orders</option>
-		<option value="<?php echo($basicd_link); ?>">Basic T-Shirt Package</option>
-		<option value="<?php echo($basicc_link); ?>">Basic Costume Package</option>
-		<option value="<?php echo($premiums_link); ?>">Premium T-Shirt Package</option>
-		<option value="<?php echo($premiumc_link); ?>">Premium Costume Package</option>
+		<option value="/Xquoticmas/customorder.php">Custom Orders</option>
+		<option value="/Xquoticmas/registered.php"selected>Registered Customers</option>
+		<option value="/Xquoticmas/comments.php">Comments</option>
+		<option value="/Xquoticmas/drinks.php">Drinks only Orders</option>
+		<option value="/Xquoticmas/tshirtndrinks.php">T-Shirt and Drinks</option>
+		<option value="/Xquoticmas/costumendrinks.php">Costume and Drinks Orders</option>
+		<option value="/Xquoticmas/basicshirt.php">Basic T-Shirt Package</option>
+		<option value="/Xquoticmas/basiccostume.php">Basic Costume Package</option>
+		<option value="/Xquoticmas/premiumshirt.php">Premium T-Shirt Package</option>
+		<option value="/Xquoticmas/premiumcostume.php">Premium Costume Package</option>
 	</select>
 	<br>
 	<br>

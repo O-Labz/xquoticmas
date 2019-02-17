@@ -101,9 +101,7 @@
 		}
 
 		.container-fluid{
-
 		  position: fixed;
-		  margin-top: 15%;
 		}
 		.scrollable{
 			height: 500px;
@@ -147,19 +145,18 @@
 
 
 	<div class="container-fluid">
-	<label for="clist">Custom Orders Table:</label>
 	<br>
 	<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-		<option value="<?php echo($welcome_link); ?>"selected >Custom Orders</option>
-		<option value="<?php echo($reg_link); ?>">Registered Customers</option>
-		<option value="<?php echo($comments_link); ?>">Comments</option>
-		<option value="<?php echo($drinks_link); ?>">Drinks only Orders</option>
-		<option value="<?php echo($tshirt_link); ?>">T-Shirt and Drinks</option>
-		<option value="<?php echo($costume_link); ?>">Costume and Drinks Orders</option>
-		<option value="<?php echo($basicd_link); ?>">Basic T-Shirt Package</option>
-		<option value="<?php echo($basicc_link); ?>">Basic Costume Package</option>
-		<option value="<?php echo($premiums_link); ?>">Premium T-Shirt Package</option>
-		<option value="<?php echo($premiumc_link); ?>">Premium Costume Package</option>
+		<option value="/Xquoticmas/customorder.php" selected>Custom Orders</option>
+		<option value="/Xquoticmas/registered.php">Registered Customers</option>
+		<option value="/Xquoticmas/comments.php" >Comments</option>
+		<option value="/Xquoticmas/drinks.php">Drinks only Orders</option>
+		<option value="/Xquoticmas/tshirtndrinks.php">T-Shirt and Drinks</option>
+		<option value="/Xquoticmas/costumendrinks.php">Costume and Drinks Orders</option>
+		<option value="/Xquoticmas/basicshirt.php" >Basic T-Shirt Package</option>
+		<option value="/Xquoticmas/basiccostume.php">Basic Costume Package</option>
+		<option value="/Xquoticmas/premiumshirt.php">Premium T-Shirt Package</option>
+		<option value="/Xquoticmas/premiumcostume.php">Premium Costume Package</option>
 	</select>
 	<br>
 	<br>
@@ -186,11 +183,9 @@
 			<th>Phone Case</th>
 			<th>Metal Phone Ring</th>
 			<th>Mardi Gras</th>
-			<th>Jouvert</th>
 			<th>Shirtstyle</th>
 			<th>Shirtsize</th>
 			<th>Shirtcolor</th>
-			<th>Shortssize</th>
 			<th>Costumename</th>
 			<th>Bust</th>
 			<th>Waist</th>
@@ -230,11 +225,9 @@
 				<td><?php echo $row['phonecase'];?></td>
 				<td><?php echo $row['ring'];?></td>
 				<td><?php echo $row['mardi'];?></td>
-				<td><?php echo $row['jouvert'];?></td>
 				<td><?php echo $row['shirtstyle'];?></td>
 				<td><?php echo $row['shirtsize'];?></td>
 				<td><?php echo $row['shirtcolor'];?></td> 
-				<td><?php echo $row['shortssize'];?></td>
 				<td><?php echo $row['costumename'];?></td>
 				<td><?php echo $row['bust'];?></td>
 				<td><?php echo $row['waist'];?></td>

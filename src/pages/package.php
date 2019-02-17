@@ -57,10 +57,22 @@
 		transform: scale(1.1);
 		color: #000000;
 	}
+
+	.background{
+	  position:fixed;
+	  top:0;
+	  bottom:0;
+	  left:0;
+	  right:0;
+	  z-index: -1;
+	  object-fit: fill;
+	}
+
 </style>
 
 
-
+<div >
+  <img class="background" src="/Xquoticmas/assets/feathers.png">
 <div class="my-gallery">
 	<div class="scrollable">
 	<div class="row">
@@ -190,7 +202,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 
 <!-- Drinks Modal -->
 <div class="modal fade" id="drinksModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
@@ -224,7 +236,7 @@
 			    </div>
 			    <div class="form-group">
 			      <label for="inputAddress2"></label>
-			      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
+			      <input type="tel" class="form-control" id="phone" name="phone" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
 			    </div>
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
@@ -235,8 +247,8 @@
 			        <label for="inputState"></label>
 			        <select id="inputState" class="form-control" id="gender" name="gender" required>
 			          <option value="" disabled selected>Gender...</option>
-			          <option>Male</option>
-			          <option>Female</option>
+			          <option value="Male">Male</option>
+			          <option value="Female">Female</option>
 			        </select>
 			      </div>
 			    </div>
@@ -286,29 +298,29 @@
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
 				          <option value="" disabled selected>T-Shirt Style</option>
-				          <option>Tank Top</option>
-				          <option>T-Shirt</option>
-				          <option>Tube Top</option>
+				          <option value="Tank Top">Tank Top</option>
+				          <option value="T-Shirt">T-Shirt</option>
+				          <option value="Tube Top">Tube Top</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
 				          <option value="" disabled selected>Shirt Size...</option>
-				          <option>XS</option>
-				          <option>S</option>
-				          <option>M</option>
-				          <option>L</option>
-				          <option>XL</option>
-				          <option>XXL</option>
+				          <option value="XS">XS</option>
+				          <option value="S">S</option>
+				          <option value="M">M</option>
+				          <option value="L">L</option>
+				          <option value="X">XL</option>
+				          <option value="XXL">XXL</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
 				          <option value="" disabled selected>Shirt Colour...</option>
-				          <option>Black</option>
-				          <option>White</option>
+				          <option value="Black">Black</option>
+				          <option value="White">White</option>
 				        </select>
 				      </div>
 				    </div>
@@ -363,51 +375,51 @@
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
 				          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
-				          <option>XS</option>
-				          <option>S</option>
-				          <option>M</option>
-				          <option>L</option>
-				          <option>XL</option>
-				          <option>XXL</option>
+				          <option value="XS">XS</option>
+				          <option value="S">S</option>
+				          <option value="M">M</option>
+				          <option value="L">L</option>
+				          <option value="X">XL</option>
+				          <option value="XXL">XXL</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
 				          <option value="" disabled selected>T-Shirt Style</option>
-				          <option>Tank Top</option>
-				          <option>T-Shirt</option>
-				          <option>Tube Top</option>
+				          <option value="Tank Top">Tank Top</option>
+				          <option value="T-Shirt">T-Shirt</option>
+				          <option value="Tube Top">Tube Top</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
 				          <option value="" disabled selected>T-Shirt Size:</option>
-				          <option>XS</option>
-				          <option>S</option>
-				          <option>M</option>
-				          <option>L</option>
-				          <option>XL</option>
-				          <option>XXL</option>
+				          <option value="XS">XS</option>
+				          <option value="S">S</option>
+				          <option value="M">M</option>
+				          <option value="L">L</option>
+				          <option value="XL">XL</option>
+				          <option value="XXL">XXL</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shortssize" name="shortssize" >
 				          <option value="" disabled selected>Shorts Size:</option>
-				          <option>S</option>
-				          <option>M</option>
-				          <option>L</option>
-				          <option>XL</option>
+				          <option value="S">S</option>
+				          <option value="M">M</option>
+				          <option value="L">L</option>
+				          <option value="XL">XL</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
 				          <option value="" disabled selected>T-Shirt Color:</option>
-				          <option>Black</option>
-				          <option>White</option>
+				          <option value="Black">Black</option>
+				          <option value="White">White</option>
 				        </select>
 				      </div>
 				    </div>
@@ -483,12 +495,12 @@
 						        <label for="inputZip"></label>
 						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
 						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
-						          <option>XS</option>
-						          <option>S</option>
-						          <option>M</option>
-						          <option>L</option>
-						          <option>XL</option>
-						          <option>XXL</option>
+						          <option value="XS">XS</option>
+						          <option value="S">S</option>
+						          <option value="M">M</option>
+						          <option value="L">L</option>
+						          <option value="XL">XL</option>
+						          <option value="XXL">XXL</option>
 						        </select>
 						     </div>
 						      <div class="form-group col-md-6">
@@ -511,12 +523,12 @@
 						        <label for="inputZip"></label>
 						        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
 						          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
-						          <option>XS</option>
-						          <option>S</option>
-						          <option>M</option>
-						          <option>L</option>
-						          <option>XL</option>
-						          <option>XXL</option>
+						          <option value="XS">XS</option>
+						          <option value="S">S</option>
+						          <option value="M">M</option>
+						          <option value="L">L</option>
+						          <option value="XL">XL</option>
+						          <option value="XXL">XXL</option>
 						        </select>
 						  </div>
 					      <div class="form-group col-md-6">
@@ -546,12 +558,12 @@
 					        <label for="inputZip"></label>
 					        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
 					          <option value="" disabled selected>J’Ouvert T-Shirt Size (all shirts come in white)</option>
-					          <option>XS</option>
-					          <option>S</option>
-					          <option>M</option>
-					          <option>L</option>
-					          <option>XL</option>
-					          <option>XXL</option>
+					          <option value="XS">XS</option>
+					          <option value="S">S</option>
+					          <option value="M">M</option>
+					          <option value="L">L</option>
+					          <option value="XL">XL</option>
+					          <option value="XXL">XXL</option>
 					        </select>
 					     </div>
 					      <div class="form-group col-md-6">
@@ -622,7 +634,7 @@
 			    </div>
 			    <div class="form-group">
 			      <label for="inputAddress2"></label>
-			      <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
+			      <input type="tel" class="form-control" id="phone" name="phone" maxlength="12" placeholder="Contact Number: 876 888 8888" required>
 			    </div>
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
@@ -633,8 +645,8 @@
 			        <label for="inputState"></label>
 			        <select id="inputState" class="form-control" id="gender" name="gender" required>
 			          <option value="" disabled selected>Gender...</option>
-			          <option>Male</option>
-			          <option>Female</option>
+			          <option value="Male">Male</option>
+			          <option value="Female">Female</option>
 			        </select>
 			      </div>
 			    </div>
@@ -656,26 +668,26 @@
 					        <input type="checkbox" name="mug" id="mug" value="mug"> Mug</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="jar" id="jar" value="jar"> Mason Jar</input>
+					        <input type="checkbox" name="jar" id="mason jar" value="mason jar"> Mason Jar</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="tote" id="tote" value="tote"> Tote Bag (pre-selected)</input>
+					        <input type="checkbox" name="tote" id="tote" value="tote bag"> Tote Bag (pre-selected)</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="wrag" id="wrag" value="wrag"> Wave Rag</input>
+					        <input type="checkbox" name="wrag" id="wrag" value="wave wrag"> Wave Rag</input>
 					      </div>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="phonecase" id="phonecase" value="phonecase"> Waterproof Phone Case</input>
+					        <input type="checkbox" name="phonecase" id="phonecase" value="waterproof phone case"> Waterproof Phone Case</input>
 					      </div>
 					      <br>
 					      <div class="form-group col-md-12">
-					        <input type="checkbox" name="ring" id="ring" value="ring"> Metal Phone Ring</input>
+					        <input type="checkbox" name="ring" id="ring" value="metal phone ring"> Metal Phone Ring</input>
 					      </div>
 					      <div class="form-group col-md-6">
-					        <input type="checkbox" name="mardi" id="mardi" value="mardi"> Mardi Gras</input>
+					        <input type="checkbox" name="mardi" id="mardi" value="mardi gras"> Mardi Gras</input>
 					      </div>
 
-					      <div class="form-group col-md-12">
+					      <div class="form-group col-md-12" hidden="true">
 					        <label for="inputZip"></label>
 					        <select id="inputState" class="form-control" id="jouvert" name="jouvert" >
 					          <option value="" disabled selected>J’Ouvert ($500) T-Shirt Size (all shirts come in white)</option>
@@ -688,7 +700,7 @@
 					        </select>
 					      </div>
 
-					      <div class="form-group col-md-12">
+					      <div class="form-group col-md-12" hidden="true">
 					        <label for="inputZip"></label>
 					        <select id="inputState" class="form-control" id="shorts" name="shorts" >
 					          <option value="" disabled selected>Shorts ($2000)</option>
@@ -705,7 +717,7 @@
 			    <label for="inputState">Select a Package</label>
 			    <div class="form-row">
 			      <div class="form-group col-md-6">
-			        <input type="radio" id="package"  name="package" value="tshirtanddrinks"> T-Shirt
+			        <input type="radio" id="package"  name="package" value="Chose T-Shirt Option"> T-Shirt
 			      </div>
 			      	<div id="tshirtanddrinkstextboxes">
 				     <div class="form-row">
@@ -713,29 +725,29 @@
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtstyle" name="shirtstyle" >
 				          <option value="" disabled selected>T-Shirt Style</option>
-				          <option>Tank Top</option>
-				          <option>T-Shirt</option>
-				          <option>Tube Top</option>
+				          <option value="Tank Top">Tank Top</option>
+				          <option value="T-Shirt">T-Shirt</option>
+				          <option value="Tube Top">Tube Top</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtsize" name="shirtsize" >
 				          <option value="" disabled selected>Shirt Size...</option>
-				          <option>XS</option>
-				          <option>S</option>
-				          <option>M</option>
-				          <option>L</option>
-				          <option>XL</option>
-				          <option>XXL</option>
+				          <option value="XS">XS</option>
+				          <option value="S">S</option>
+				          <option value="M">M</option>
+				          <option value="L">L</option>
+				          <option value="XL">XL</option>
+				          <option value="XXL">XXL</option>
 				        </select>
 				      </div>
 				      <div class="form-group col-md-6">
 				        <label for="inputZip"></label>
 				        <select id="inputState" class="form-control" id="shirtcolor" name="shirtcolor" >
 				          <option value="" disabled selected>Shirt Colour...</option>
-				          <option>Black</option>
-				          <option>White</option>
+				          <option value="Black">Black</option>
+				          <option value="White">White</option>
 				        </select>
 				      </div>
 				    </div>
@@ -767,7 +779,27 @@
 				</div>
 				<hr>
 			      	  <div class="form-group col-md-12">
-				        <input type="radio" id="subpackage" name="subpackage" value="basicandrosfront"> Andros Frontline or Backline
+				        <input type="radio" id="subpackage" name="subpackage" value="andros frontline"> Andros Frontline
+				      </div>
+					<div id="basicandrostextboxes">
+						<div class="form-row">
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+						      </div>
+						      <div class="form-group col-md-6">
+						        <input type="text" class="form-control" placeholder="Neck width" id="neck" name="neck" >
+						      </div>
+					    </div>
+					</div>
+					<hr>
+					<div class="form-group col-md-12">
+				        <input type="radio" id="subpackage" name="subpackage" value="andros backline"> Andros Backline
 				      </div>
 					<div id="basicandrostextboxes">
 						<div class="form-row">
@@ -787,7 +819,7 @@
 					</div>
 					<hr>
 						<div class="form-group col-md-12">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicparadisefront"> Paradise Frontline or Backline
+				        <input type="radio" id="subpackage"  name="subpackage" value="paradise frontline"> Paradise Frontline
 				      </div>
 					<div id="basicparadisetextboxes">
 					<div class="form-row">
@@ -813,8 +845,37 @@
 					    </div>
 					</div>
 					<hr>
+					<hr>
+						<div class="form-group col-md-12">
+				        <input type="radio" id="subpackage"  name="subpackage" value="paradise backline"> Paradise Backline
+				      </div>
+					<div id="basicparadisetextboxes">
+					<div class="form-row">
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Bust" id="bust" name="bust" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Waist" id="waist" name="waist" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Hip" id="hip" name="hip" >
+					      </div>
+					      <div class="form-group col-md-6">
+					        <input type="text" class="form-control" placeholder="Navel to Crotch" id="navel" name="navel" >
+					      </div>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Shoulder to Underbust" id="shoulder" name="shoulder" >
+					      </div>
+					      <br>
+					      <div class="form-group col-md-12">
+					        <input type="text" class="form-control" placeholder="Width between each Breast" id="breast" name="breast" >
+					      </div>
+					    </div>
+					</div>
+					<hr>
+
 						<div class="form-group col-md-6">
-				        <input type="radio" id="subpackage"  name="subpackage" value="basicexuma"> Exuma
+				        <input type="radio" id="subpackage"  name="subpackage" value="exuma"> Exuma
 				      </div>
 					<div id="basicexumatextboxes">
 					<div class="form-row">

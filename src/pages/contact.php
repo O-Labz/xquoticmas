@@ -19,8 +19,21 @@
     margin: auto; 
     padding-left: 2em;
   }
+.background{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: -1;
+  object-fit: fill;
+}
+
 </style>
 
+
+<div >
+  <img class="background" src="/Xquoticmas/assets/feathers.png">
 <div class="container my-container">
   <form action="sendcomment.php" method="POST" enctype="multipart/form-data">
     <div class="form-row">
@@ -47,4 +60,5 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</div>
 </div>

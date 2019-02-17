@@ -15,8 +15,6 @@
 	DEFINE('CONTACT_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=contactdone');
 	DEFINE('REGISTER_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/src/pages/index.php?page=registrationdone');
 	DEFINE('ADMIN_LINK', 'Location: http://www.xquoticmas.com/Xquoticmas/index.php');
-
-	DEFINE('WELCOME_LINK','http://www.xquoticmas.com/Xquoticmas/customorder.php');
 	DEFINE('REG_LINK','http://www.xquoticmas.com/Xquoticmas/registered.php');
 	DEFINE('COMMENTS_LINK','http://www.xquoticmas.com/Xquoticmas/comments.php');
 	DEFINE('DRINKS_LINK','http://www.xquoticmas.com/Xquoticmas/drinks.php');
@@ -27,7 +25,7 @@
 	DEFINE('PREMIUMS_LINK','http://www.xquoticmas.com/Xquoticmas/premiumshirt.php');
 	DEFINE('COSTUMED_LINK','http://www.xquoticmas.com/Xquoticmas/costumendrinks.php');
 	DEFINE('PREMIUMC_LINK','http://www.xquoticmas.com/Xquoticmas/premiumcostume.php');
-	DEFINE('CUSTOMO_LINK','http://www.xquoticmas.com/Xquoticmas/customeorders.php');
+	DEFINE('CUSTOMO_LINK','http://www.xquoticmas.com/Xquoticmas/customorder.php');
 
 	$abc = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) or die("Could not connect to MYSQL: ".mysqli_connect_error());
 
@@ -40,7 +38,6 @@
 	$register_link = REGISTER_LINK;
 	$admin_link = ADMIN_LINK;
 
-	$welcome_link = WELCOME_LINK;
 	$reg_link = REG_LINK;
 	$comments_link = COMMENTS_LINK;
 	$drinks_link = DRINKS_LINK;

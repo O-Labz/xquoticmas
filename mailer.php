@@ -130,7 +130,8 @@ $body = '<!DOCTYPE html>'
             //Recipients
             $mail->setFrom('xquoticmas@gmail.com', 'Xquotic Mas');
             // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-            $mail->addAddress($toAddress);               // Name is optional
+            // $mail->addAddress($toAddress);               // Name is optional
+            $mail->addAddress('xquoticmas@gmail.com');
             // $mail->addReplyTo('info@example.com', 'Information');
             // $mail->addCC('cc@example.com');
             // $mail->addBCC('bcc@example.com');
